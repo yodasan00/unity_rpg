@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - SolidObjects
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Object_
     uniqueID: 125718323
+    locked: 0
+  - name: Player
+    uniqueID: 1659525747
     locked: 0
   m_RenderingLayers:
   - Default
