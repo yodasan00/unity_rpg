@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3e36e9287b811a49a9215deb49bb435
+guid: b75dba28a480ad74e8e28f62234ca48d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: building1
+  - name: bridge
     originalName: 
-    pivot: {x: 0.6530612, y: 0}
+    pivot: {x: 0.60952383, y: -0.025}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 98
-      height: 124
-    spriteID: 4ec845d5449a64e4f85953e1a6cbe08d
+      width: 105
+      height: 80
+    spriteID: cf2a24f9a69cbf84880c6d2b629ee8be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -147,21 +147,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1625006991
-    name: building1
+    guid: 1413018583
+    name: bridge
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: building1
+    - name: bridge
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
-        width: 98
-        height: 124
-      spriteId: 4ec845d5449a64e4f85953e1a6cbe08d
+        y: 2
+        width: 105
+        height: 80
+      spriteId: cf2a24f9a69cbf84880c6d2b629ee8be
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -181,4 +181,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 128, y: 128}
-  previousTextureSize: {x: 128, y: 256}
+  previousTextureSize: {x: 128, y: 128}

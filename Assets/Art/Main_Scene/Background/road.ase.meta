@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9002a42852a66474d9245e2e15a18410
+guid: b30d867d03b560c448a28822227b9f6b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -82,7 +82,7 @@ ScriptedImporter:
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
-    addSortingGroup: 0
+    addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
     fileImportMode: 0
@@ -95,10 +95,10 @@ ScriptedImporter:
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
-    addSortingGroup: 0
+    addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638827354714971227
+  platformSettingsDirtyTick: 638827374437084973
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,7 +123,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: road_back
+  - name: road
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -135,27 +135,17 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: ea4202e15eae5bd4f93e1cc7a06fae90
+    spriteID: c1ffe92982538f047a96dddc9c96be3f
     spriteBone: []
-    spriteOutline:
-    - outline:
-      - {x: 8, y: 8}
-      - {x: -8, y: 8}
-      - {x: -8, y: -8}
-      - {x: 8, y: -8}
+    spriteOutline: []
     vertices: []
-    spritePhysicsOutline:
-    - outline:
-      - {x: 8, y: 8}
-      - {x: -8, y: 8}
-      - {x: -8, y: -8}
-      - {x: 8, y: -8}
+    spritePhysicsOutline: []
     indices: 
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: road_back_0
+  - name: road_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -167,7 +157,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: d1cb0a10ff63e4542ad9870becbb7851
+    spriteID: 62aeb8b7760d2f1479249e03218f79b7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,13 +168,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 2026126830
-    name: road_back
+    guid: -151838404
+    name: road
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: road_back
+    - name: road
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -192,7 +182,7 @@ ScriptedImporter:
         y: 0
         width: 16
         height: 16
-      spriteId: ea4202e15eae5bd4f93e1cc7a06fae90
+      spriteId: c1ffe92982538f047a96dddc9c96be3f
     linkedCells: []
     parentIndex: -1
   platformSettings:
