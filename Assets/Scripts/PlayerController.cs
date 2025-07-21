@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
 
     bool IsWalkable(Vector2 pos)
     {
-        Collider2D hit = Physics2D.OverlapCircle(pos, 0.1f, LayerMask.GetMask("SolidObjects"));
+        Collider2D hit = Physics2D.OverlapCircle(pos, 0.1f, LayerMask.GetMask("SolidObjects"),LayerMask.GetMask("Interactables"));
         return hit == null;
     }
 }
