@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ace9fa442e680ac48a4a8665f793d355
+guid: 5277b4ce39a93bd4f88fb9b2d0d9f1e2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 16
+    spritePixelsToUnits: 32
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638910778482900386
+  platformSettingsDirtyTick: 638910680816697781
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,30 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Frame_0
+  - name: desk
     originalName: 
-    pivot: {x: 0.4666667, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 80
-      width: 15
-      height: 30
-    spriteID: 1d010b744b4036f4fa482cf2f11c6b1d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 80}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.47619048, y: -0.033333335}
+    pivot: {x: 0.5, y: -0.22857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -154,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 21
-      height: 30
-    spriteID: 71e7616f6a1c3f84197256ef9e25f4ff
+      width: 128
+      height: 70
+    spriteID: a972061b0e4ee8241904bd7550fbabff
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -165,92 +144,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Frame_2
-    originalName: 
-    pivot: {x: 0.4666667, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 33
-      y: 4
-      width: 15
-      height: 30
-    spriteID: ace7ca6a797d93c4193013a853844078
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 33, y: 4}
-  - name: Frame_3
-    originalName: 
-    pivot: {x: 0.47619048, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 42
-      width: 21
-      height: 30
-    spriteID: 54ac19dcdfa2baf45ab35735aab13b80
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 42}
   spriteSheetImportData:
-  - name: moving_left_0
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 80
-      width: 15
-      height: 30
-    spriteID: a12b5df4557eaf740bbd411b0c5e81cb
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: moving_left_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 42
-      width: 21
-      height: 30
-    spriteID: 46d3769f8dfeb8b44b5d785a2e31610e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: moving_left_2
+  - name: desk_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -260,30 +155,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 21
-      height: 30
-    spriteID: f2649e51048eb584ca9a3cbb88710013
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: moving_left_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 33
-      y: 4
-      width: 15
-      height: 30
-    spriteID: 37cbaf6408b22a744b0d8622d180f2de
+      width: 128
+      height: 70
+    spriteID: 1beeaa906d87eac4398a84452b9f3ddb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -294,48 +168,21 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 857802020
-    name: moving_left
+    guid: -2081060087
+    name: desk
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: desk
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 9
-        y: 0
-        width: 15
-        height: 30
-      spriteId: 1d010b744b4036f4fa482cf2f11c6b1d
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 6
-        y: 1
-        width: 21
-        height: 30
-      spriteId: 71e7616f6a1c3f84197256ef9e25f4ff
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 0
-        width: 15
-        height: 30
-      spriteId: ace7ca6a797d93c4193013a853844078
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 6
-        y: 1
-        width: 21
-        height: 30
-      spriteId: 54ac19dcdfa2baf45ab35735aab13b80
+        x: 0
+        y: 16
+        width: 128
+        height: 70
+      spriteId: a972061b0e4ee8241904bd7550fbabff
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -378,5 +225,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 64, y: 128}
+  canvasSize: {x: 128, y: 128}
+  previousTextureSize: {x: 256, y: 128}

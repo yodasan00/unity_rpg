@@ -404509,6 +404509,7 @@ Transform:
   m_Children:
   - {fileID: 154439167}
   - {fileID: 1212000226}
+  - {fileID: 1615737959}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &469813219
@@ -404557,11 +404558,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db13799c8e050ab4e8d66ad887b9065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialougeCanvas: {fileID: 974355745}
+  dialogueCanvas: {fileID: 974355745}
   speakerText: {fileID: 1743532669}
   dialogueText: {fileID: 1412518616}
-  potraitImage: {fileID: 583048900}
-  speakerName:
+  portraitImage: {fileID: 583048900}
+  speakerNames:
   - Yaad
   - Yaad
   - Yaad
@@ -404569,10 +404570,11 @@ MonoBehaviour:
   - Well! Hello There!! I'm Yaad
   - Welcome to our college SIST!
   - Enjoy Your Visit
-  potraitImages:
+  portraitImages:
   - {fileID: 3223026509457666076, guid: 4e6543537eb931e47b6d59679711b620, type: 3}
   - {fileID: 3223026509457666076, guid: 4e6543537eb931e47b6d59679711b620, type: 3}
   - {fileID: 3223026509457666076, guid: 4e6543537eb931e47b6d59679711b620, type: 3}
+  lettersPerSecond: 3
 --- !u!61 &469813222
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -405734,12 +405736,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615737956}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -29.62948, y: -9.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 438572238}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1615737960
 MonoBehaviour:
@@ -406014,4 +406016,3 @@ SceneRoots:
   - {fileID: 243632260}
   - {fileID: 1038131073}
   - {fileID: 974355749}
-  - {fileID: 1615737959}

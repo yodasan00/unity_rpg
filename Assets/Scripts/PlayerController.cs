@@ -67,10 +67,15 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
-    // public Animator animator;
+    private Animator animator;
 
     private Vector2 movement;
     private bool isMoving;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -78,13 +83,12 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        // Restrict to cardinal directions (no diagonal movement)
-        if (Mathf.Abs(movement.x) > 0) movement.y = 0;
+        // // Restrict to cardinal directions (no diagonal movement)
+        // if (Mathf.Abs(movement.x) > 0) movement.y = 0;
 
-        // Update animator values
-        // animator.SetFloat("moveX", movement.x);
-        // animator.SetFloat("moveY", movement.y);
-        // animator.SetBool("isMoving", movement != Vector2.zero);
+        animator.SetFloat("moveX", movement.x);
+        animator.SetFloat("moveY", movement.y);
+        animator.SetBool("isMoving", movement != Vector2.zero);
     }
 
     void FixedUpdate()

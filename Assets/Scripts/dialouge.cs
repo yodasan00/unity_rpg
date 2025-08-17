@@ -1,73 +1,148 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System.Collections;
 
-public class dialouge : MonoBehaviour
+public class DialogueSystem : MonoBehaviour
 {
-    //UI refernce
-    [SerializeField]
-    private GameObject dialougeCanvas;
+    // UI References
+    [Header("UI References")]
+    [SerializeField] private GameObject dialogueCanvas;
+    [SerializeField] private TMP_Text speakerText;
+    [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private Image portraitImage;
 
-    [SerializeField]
-    private TMP_Text speakerText;
+    // Dialogue Data
+    [Header("Dialogue Data")]
+    [SerializeField] private string[] speakerNames;
+    [SerializeField, TextArea(3, 10)] private string[] dialogueLines;
+    [SerializeField] private Sprite[] portraitImages;
+    [SerializeField] private float lettersPerSecond;
 
-    [SerializeField]
-    private TMP_Text dialogueText;
-
-    [SerializeField]
-    private Image potraitImage;
-
-    //Dialogue data
-    [SerializeField]
-    private string[] speakerName;
-
-    [SerializeField]
-    [TextArea(3, 10)]
-    private string[] dialogueLines;
-
-    [SerializeField]
-    private Sprite[] potraitImages;
-
+    // State variables
+    private bool playerIsInTrigger = false;
     private bool isDialogueActive = false;
+    private bool isTyping = false;
     private int currentLineIndex = 0;
+    private Coroutine typeCoroutine;
+
+    private int minLength;
+
     void Start()
     {
-        dialougeCanvas.SetActive(false);
+        
+        // Deactivate the dialogue UI at the start.
+        if (dialogueCanvas != null)
+        {
+            dialogueCanvas.SetActive(false);
+        }
+
+        minLength = Mathf.Min(speakerNames.Length, dialogueLines.Length, portraitImages.Length);
     }
 
-   
-        void Update()
+    void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isDialogueActive)
-        {
-            int minLength = Mathf.Min(speakerName.Length, dialogueLines.Length, potraitImages.Length);
-            if (currentLineIndex >= minLength)
-            {
-                dialougeCanvas.SetActive(false);
-                currentLineIndex = 0;
-            }
-            else
-            {
-                dialougeCanvas.SetActive(true);
-                speakerText.text = speakerName[currentLineIndex];
+        if (playerIsInTrigger && Input.GetKeyDown(KeyCode.Space) && !isDialogueActive){
+            StartDialogue();
+        }
+        else if (isDialogueActive && Input.GetKeyDown(KeyCode.Space)){
+            if (isTyping){
+                StopCoroutine(typeCoroutine);
                 dialogueText.text = dialogueLines[currentLineIndex];
-                potraitImage.sprite = potraitImages[currentLineIndex];
+                isTyping = false;
+            }
+            else{
                 currentLineIndex++;
+                if (currentLineIndex < minLength)
+                {
+                    StartLine();
+                }
+                else
+                {
+                    EndDialogue();
+                }
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
-            isDialogueActive = true;
+            playerIsInTrigger = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            playerIsInTrigger = false;
+            EndDialogue();
+        }
+    }
+    private void StartDialogue()
+    {
+        isDialogueActive = true;
+        if (dialogueCanvas != null)
+        {
+            dialogueCanvas.SetActive(true);
+        }
+        currentLineIndex = 0;
+        StartLine();
+    }
+
+    // Starts a single line of dialogue.
+    private void StartLine()
+    {
+        if (currentLineIndex < minLength && speakerText != null && portraitImage != null)
+        {
+            speakerText.text = speakerNames[currentLineIndex];
+            portraitImage.sprite = portraitImages[currentLineIndex];
+
+            if (typeCoroutine != null)
+            {
+                StopCoroutine(typeCoroutine);
+            }
+
+            if (dialogueText != null)
+            {
+                typeCoroutine = StartCoroutine(TypeDialogue(dialogueLines[currentLineIndex]));
+            }
+        }
+        else
+        {
+            EndDialogue();
+        }
+    }
+
+    // The coroutine for the typewriter effect.
+    public IEnumerator TypeDialogue(string line)
+    {
+        isTyping = true;
+        dialogueText.text = "";
+
+        foreach (char letter in line.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(1f / lettersPerSecond);
+        }
+        isTyping = false;
+    }
+
+    // Ends the dialogue and resets the state.
+    private void EndDialogue()
+    {
+        if (typeCoroutine != null)
+        {
+            StopCoroutine(typeCoroutine);
+        }
         isDialogueActive = false;
-       dialougeCanvas.SetActive(false);
+        isTyping = false;
+        if (dialogueCanvas != null)
+        {
+            dialogueCanvas.SetActive(false);
+        }
+        currentLineIndex = 0;
     }
 }
