@@ -5,20 +5,6 @@ public class ComputerManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject ComputerScreen;
-    [SerializeField]
-    private Button McqButton;
-
-    [SerializeField]
-    private Button CodingButton;
-
-    [SerializeField]
-    private GameObject MCQCanvas;
-
-    [SerializeField]
-    private Button closeButton;
-
-    // [SerializeField]
-    // private GameObject CodingCanvas;
 
     private bool istrigger = false;
 
@@ -29,8 +15,6 @@ public class ComputerManager : MonoBehaviour
     {
         Debug.Log("Computer Manager started");
         ComputerScreen.SetActive(false);
-        MCQCanvas.SetActive(false);
-        options();
     }
 
     // Update is called once per frame
@@ -62,39 +46,4 @@ public class ComputerManager : MonoBehaviour
         }
     }
 
-    void CloseComputerScreen()
-    {
-        ComputerScreen.SetActive(false);
-        MCQCanvas.SetActive(false);
-        Player.enabled = true;
-    }
-
-    void options()
-    {
-        closeButton.onClick.RemoveAllListeners();
-        closeButton.onClick.AddListener(CloseComputerScreen);
-
-        McqButton.onClick.RemoveAllListeners();
-        McqButton.onClick.AddListener(OpenMCQ);
-
-        // CodingButton.onClick.RemoveAllListeners();
-        // CodingButton.onClick.AddListener(OpenCoding);
-
-    }
-    
-    void OpenMCQ()
-    {
-        Debug.Log("MCQ Button Clicked");
-        ComputerScreen.SetActive(false);
-        GameObject mcq = MCQCanvas;
-        if (mcq != null)
-        {
-            mcq.SetActive(true);
-            mcq.GetComponent<ComputerMCQ>().intstantiate();
-        }
-        else
-        {
-            Debug.LogError("MCQCanvas not found!");
-        }
-    }
 }

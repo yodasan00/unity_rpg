@@ -47,12 +47,13 @@ public class ComputerMCQ : MonoBehaviour
         ScorePanel.SetActive(false);
     }
 
-    public void intstantiate()
+    public void Intstantiate()
     {
         score = 0;
         currentQuestion = 0;
         ShuffleQuestions();
         LoadQuestion();
+        
         ScorePanel.SetActive(false);
     }
 
