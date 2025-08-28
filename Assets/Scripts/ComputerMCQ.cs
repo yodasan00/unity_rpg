@@ -47,7 +47,7 @@ public class ComputerMCQ : MonoBehaviour
         ScorePanel.SetActive(false);
     }
 
-    public void Intstantiate()
+    public void Initialize()
     {
         score = 0;
         currentQuestion = 0;

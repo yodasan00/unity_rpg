@@ -405595,6 +405595,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2884477756568177003, guid: 3543597e3bf60034b9df44c30ca563a8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a7ebe1939ba3f164e8bb1a84c619f76f, type: 2}
+    - target: {fileID: 2884477756568177003, guid: 3543597e3bf60034b9df44c30ca563a8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7816732275072982405, guid: a7ebe1939ba3f164e8bb1a84c619f76f, type: 2}
+    - target: {fileID: 2884477756568177003, guid: 3543597e3bf60034b9df44c30ca563a8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544272081003250550, guid: 3543597e3bf60034b9df44c30ca563a8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a7ebe1939ba3f164e8bb1a84c619f76f, type: 2}
+    - target: {fileID: 4544272081003250550, guid: 3543597e3bf60034b9df44c30ca563a8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7816732275072982405, guid: a7ebe1939ba3f164e8bb1a84c619f76f, type: 2}
+    - target: {fileID: 4544272081003250550, guid: 3543597e3bf60034b9df44c30ca563a8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4841323646705962360, guid: 3543597e3bf60034b9df44c30ca563a8, type: 3}
       propertyPath: m_Name
       value: DialougeCanvas

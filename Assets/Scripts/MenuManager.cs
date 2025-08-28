@@ -2,21 +2,15 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject ComputerScreen;
-     [SerializeField]
-    private GameObject MenuScreen;
+    [SerializeField] private GameObject ComputerScreen;
+    [SerializeField] private GameObject MenuScreen;
+    [SerializeField] private GameObject MCQCanvas;
+    [SerializeField] private GameObject TypingCanvas;
+    [SerializeField] private GameObject Mcqmanager;
+    [SerializeField] private GameObject TypingManager;
 
-    [SerializeField]
-    private GameObject MCQCanvas;
-
-    [SerializeField]
-    private GameObject TypingCanvas;
-
-    [SerializeField]
-    private GameObject Mcqmanager;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public PlayerController Player;
+
     void Start()
     {
         Debug.Log("Menu Manager started");
@@ -25,28 +19,46 @@ public class MenuManager : MonoBehaviour
         TypingCanvas.SetActive(false);
     }
 
-    // Update is called once per frame
     public void CloseComputerScreen()
     {
         ComputerScreen.SetActive(false);
         MCQCanvas.SetActive(false);
         TypingCanvas.SetActive(false);
-         MenuScreen.SetActive(true);
+        MenuScreen.SetActive(true);
         Player.enabled = true;
-    }    
+    }
+
     public void OpenMCQ()
     {
         Debug.Log("MCQ Button Clicked");
-        // ComputerScreen.SetActive(true);
-        GameObject mcq = Mcqmanager;
-            MenuScreen.SetActive(false);
-            MCQCanvas.SetActive(true);
-            mcq.GetComponent<ComputerMCQ>().Intstantiate();
+        MenuScreen.SetActive(false);
+        MCQCanvas.SetActive(true);
+
+        var mcq = Mcqmanager.GetComponent<ComputerMCQ>();
+        if (mcq != null)
+        {
+            mcq.Initialize(); 
         }
-        
-    //         Debug.LogError("MCQCanvas not found!");
-    //     }
-    // }
+        else
+        {
+            Debug.LogError("ComputerMCQ script missing on Mcqmanager!");
+        }
+    }
+
+    public void OpenTyping()
+    {
+        Debug.Log("Typing Button Clicked");
+        MenuScreen.SetActive(false);
+        TypingCanvas.SetActive(true);
+
+        var typing = TypingManager.GetComponent<TypingDebug>();
+        if (typing != null)
+        {
+            typing.Initialize(); 
+        }
+        else
+        {
+            Debug.LogError("TypingDebug script missing on TypingCanvas!");
+        }
+    }
 }
-
-
