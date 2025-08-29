@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 3361805877
     locked: 0
+  - name: Grass
+    uniqueID: 339453389
+    locked: 0
   - name: Object_
     uniqueID: 125718323
     locked: 0
