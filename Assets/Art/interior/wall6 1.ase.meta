@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d0dc01637cfad744b59056929c81bdb
+guid: 0a1ddcabe2f1a344aba55106a466c511
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 30
+    spritePixelsToUnits: 64
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638922537692556641
+  platformSettingsDirtyTick: 638922515661153532
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Frame_0
+  - name: wall6
     originalName: 
-    pivot: {x: 0.5051546, y: 0}
+    pivot: {x: 0.4, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 97
+      width: 80
       height: 128
-    spriteID: b63db22526abcbc41a7b2db523cbbcbc
+    spriteID: f5091d164f7c45643bad09bd39a6dc3e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,52 +144,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.49541283, y: -0.09345794}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 140
-      width: 109
-      height: 107
-    spriteID: 02d2c6b697c5d44438b74f528930e0f8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 140}
   spriteSheetImportData:
-  - name: door_0
+  - name: wall6 1_0
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 140
-      width: 109
-      height: 107
-    spriteID: 24918198feee825419ab12dabacec523
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: door_1
-    originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -197,9 +155,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 97
+      width: 80
       height: 128
-    spriteID: 0faf8db2d60fab84eb688a5476ce3a63
+    spriteID: 0bae4ee01c2bd204fa8297ccfab6b53b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,30 +168,21 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -1670869018
-    name: door
+    guid: 593472976
+    name: wall6
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: wall6 1
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 15
+        x: 32
         y: 0
-        width: 97
+        width: 80
         height: 128
-      spriteId: b63db22526abcbc41a7b2db523cbbcbc
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 10
-        y: 10
-        width: 109
-        height: 107
-      spriteId: 02d2c6b697c5d44438b74f528930e0f8
+      spriteId: f5091d164f7c45643bad09bd39a6dc3e
     linkedCells: []
     parentIndex: -1
   platformSettings:

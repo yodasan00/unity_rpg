@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d0dc01637cfad744b59056929c81bdb
+guid: 42b14f876d81c2a4e9e3056683389e65
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 30
+    spritePixelsToUnits: 32
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638922537692556641
+  platformSettingsDirtyTick: 638910746761927657
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -168,7 +168,7 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: door_0
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -189,7 +189,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: door_1
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
