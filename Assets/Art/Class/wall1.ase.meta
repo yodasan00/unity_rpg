@@ -147,8 +147,8 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: wall1_0
     originalName: 
-    pivot: {x: 0.7777778, y: 0.5}
-    alignment: 9
+    pivot: {x: 0, y: 0.5}
+    alignment: 4
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:

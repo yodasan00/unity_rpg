@@ -147,7 +147,7 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: wall2_0
     originalName: 
-    pivot: {x: 0.49954253, y: 0.9965527}
+    pivot: {x: 0.5, y: 0.2125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -156,7 +156,7 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 128
-      height: 77
+      height: 80
     spriteID: 4514339578fbf7d43b602a0d1429f376
     spriteBone: []
     spriteOutline: []

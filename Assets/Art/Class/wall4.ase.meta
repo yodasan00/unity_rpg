@@ -147,15 +147,15 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: wall4_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 19, w: 0}
+    pivot: {x: 0, y: 0.5}
+    alignment: 4
+    border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
+      x: 1
       y: 4
-      width: 105
+      width: 131
       height: 112
     spriteID: 955d092ee163b014c85aadf39bd7bb8d
     spriteBone: []
