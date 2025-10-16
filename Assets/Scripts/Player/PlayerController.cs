@@ -83,8 +83,8 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        // // Restrict to cardinal directions (no diagonal movement)
-        // if (Mathf.Abs(movement.x) > 0) movement.y = 0;
+        // Restrict to cardinal directions (no diagonal movement)
+        if (Mathf.Abs(movement.x) > 0) movement.y = 0;
 
         animator.SetFloat("moveX", movement.x);
         animator.SetFloat("moveY", movement.y);

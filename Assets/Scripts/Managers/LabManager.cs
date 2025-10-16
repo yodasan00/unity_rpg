@@ -16,35 +16,36 @@ public class LabManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            return;
         }
     }
 
+    // Called when player clicks a lab button
     public void StartLab(LabData lab)
     {
         CurrentLab = lab;
-        Debug.Log("Starting Lab: " + lab.labName);
-        SceneManager.LoadScene(lab.labSceneName);
+       // SceneManager.LoadScene(lab.labSceneName);
     }
 
-    public void CompleteLab()
+    // Called from lab script when lab is complete
+    public void CompleteLab(int starsEarned)
     {
         if (CurrentLab == null) return;
 
-        // Mark as completed in PlayerProgress
-        var progress = ProgressManager.Instance.Player;
+        var progress = ProgressManager.Instance.playerProgress;
+
+        // Mark lab completed
         if (!progress.HasCompletedLab(CurrentLab.labName))
         {
             progress.MarkLabCompleted(CurrentLab.labName);
-            progress.AddStars(CurrentLab.starReward);
+            progress.AddStars(starsEarned); // Add earned stars
             ProgressManager.Instance.SaveProgress();
 
-            Debug.Log($"Lab '{CurrentLab.labName}' completed! +{CurrentLab.starReward} stars");
+            Debug.Log($"Lab '{CurrentLab.labName}' completed! +{starsEarned} stars");
         }
 
         CurrentLab = null;
 
-        // After completion, return to campus/main menu
-        SceneManager.LoadScene("Campus");
+        // Return to campus/main menu
+       // SceneManager.LoadScene("Campus");
     }
 }

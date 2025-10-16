@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: NewSemesterData
   m_EditorClassIdentifier: 
   semesterName: Semester1
+  labs:
+  - {fileID: 0}
   requiredStarsToUnlock: 0
-  labs: []
-  description: 'ghghghg
-
-'

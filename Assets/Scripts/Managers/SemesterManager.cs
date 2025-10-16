@@ -32,7 +32,7 @@ public class SemesterManager : MonoBehaviour
 
     public void LoadCurrentSemester()
     {
-        int currentIndex = ProgressManager.Instance.Player.currentSemester - 1;
+        int currentIndex = ProgressManager.Instance.playerProgress.currentSemester - 1;
         if (currentIndex >= 0 && currentIndex < semesters.Count)
         {
             CurrentSemester = semesters[currentIndex];
@@ -46,19 +46,19 @@ public class SemesterManager : MonoBehaviour
 
     public bool CanUnlockNextSemester()
     {
-        int currentIndex = ProgressManager.Instance.Player.currentSemester - 1;
+        int currentIndex = ProgressManager.Instance.playerProgress.currentSemester - 1;
         if (currentIndex + 1 >= semesters.Count)
             return false; //  last sem
 
         SemesterData nextSem = semesters[currentIndex + 1];
-        return ProgressManager.Instance.Player.totalStars >= nextSem.requiredStarsToUnlock;
+        return ProgressManager.Instance.playerProgress.totalStars >= nextSem.requiredStarsToUnlock;
     }
 
     public void TryUnlockNextSemester()
     {
         if (CanUnlockNextSemester())
         {
-            ProgressManager.Instance.Player.currentSemester++;
+            ProgressManager.Instance.playerProgress.currentSemester++;
             ProgressManager.Instance.SaveProgress();
             LoadCurrentSemester();
 

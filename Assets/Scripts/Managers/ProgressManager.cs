@@ -1,34 +1,91 @@
-using UnityEngine;
+// using UnityEngine;
+// using System.IO;
+
+// public class ProgressManager : MonoBehaviour
+// {
+//     public static ProgressManager Instance { get; private set; }
+//     public PlayerProgress Player { get; private set; }
+
+//     private string savePath;
+
+//     void Awake()
+//     {
+//         // Singleton pattern
+//         if (Instance == null)
+//         {
+//             Instance = this;
+//             DontDestroyOnLoad(gameObject);
+//         }
+//         else
+//         {
+//             Destroy(gameObject);
+//             return;
+//         }
+
+//         savePath = Path.Combine(Application.persistentDataPath, "player_progress.json");
+//         LoadProgress();
+//     }
+
+//     public void SaveProgress()
+//     {
+//         string json = JsonUtility.ToJson(Player, true);
+//         File.WriteAllText(savePath, json);
+//         Debug.Log("Progress saved: " + savePath);
+//     }
+
+//     public void LoadProgress()
+//     {
+//         if (File.Exists(savePath))
+//         {
+//             string json = File.ReadAllText(savePath);
+//             Player = JsonUtility.FromJson<PlayerProgress>(json);
+//             Debug.Log("Progress loaded.");
+//         }
+//         else
+//         {
+//             Player = new PlayerProgress();
+//             SaveProgress();
+//             Debug.Log("New progress created.");
+//         }
+//     }
+
+//     public void ResetProgress()
+//     {
+//         Player = new PlayerProgress();
+//         SaveProgress();
+//     }
+// }
+
 using System.IO;
+using UnityEngine;
 
 public class ProgressManager : MonoBehaviour
 {
     public static ProgressManager Instance { get; private set; }
-    public PlayerProgress Player { get; private set; }
 
     private string savePath;
+    public PlayerProgress playerProgress;
 
-    void Awake()
+    private void Awake()
     {
-        // Singleton pattern
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        // Singleton setup
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        savePath = Path.Combine(Application.persistentDataPath, "player_progress.json");
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        savePath = Path.Combine(Application.persistentDataPath, "playerProgress.json");
         LoadProgress();
     }
 
+    // --- Save/Load ---
     public void SaveProgress()
     {
-        string json = JsonUtility.ToJson(Player, true);
+        string json = JsonUtility.ToJson(playerProgress, true);
         File.WriteAllText(savePath, json);
         Debug.Log("Progress saved: " + savePath);
     }
@@ -38,20 +95,48 @@ public class ProgressManager : MonoBehaviour
         if (File.Exists(savePath))
         {
             string json = File.ReadAllText(savePath);
-            Player = JsonUtility.FromJson<PlayerProgress>(json);
-            Debug.Log("Progress loaded.");
+            playerProgress = JsonUtility.FromJson<PlayerProgress>(json);
+            Debug.Log("Progress loaded successfully!");
         }
         else
         {
-            Player = new PlayerProgress();
+            playerProgress = new PlayerProgress();
             SaveProgress();
-            Debug.Log("New progress created.");
+            Debug.Log("No save found, new progress created.");
         }
     }
 
-    public void ResetProgress()
+    // --- Progress Modification ---
+    public void AddStars(int stars)
     {
-        Player = new PlayerProgress();
+        playerProgress.AddStars(stars);
         SaveProgress();
+    }
+
+    public void CompleteLab(string labName)
+    {
+        playerProgress.MarkLabCompleted(labName);
+        SaveProgress();
+    }
+
+    public void CompleteQuest(string questName)
+    {
+        playerProgress.MarkQuestCompleted(questName);
+        SaveProgress();
+    }
+
+    public bool HasCompletedLab(string labName)
+    {
+        return playerProgress.HasCompletedLab(labName);
+    }
+
+    public int GetTotalStars()
+    {
+        return playerProgress.totalStars;
+    }
+
+    public int GetCurrentSemester()
+    {
+        return playerProgress.currentSemester;
     }
 }

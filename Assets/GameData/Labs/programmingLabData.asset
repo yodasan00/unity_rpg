@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 839af2083ffb245488a6e2146ad23960, type: 3}
-  m_Name: NewLabData
+  m_Name: programmingLabData
   m_EditorClassIdentifier: 
-  labName: 
-  description: 
-  starReward: 5
-  labType: 0
-  labSceneName: 
+  labName: prog
+  starReward: 1
+  questionSet: {fileID: 11400000, guid: 3aab60858dfa9814a96a37fb04255f94, type: 2}

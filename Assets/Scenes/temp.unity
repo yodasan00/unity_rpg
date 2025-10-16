@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 372071952}
   - component: {fileID: 372071951}
   - component: {fileID: 372071950}
+  - component: {fileID: 372071953}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -273,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   browserClient:
     engine: {fileID: 11400000, guid: 649ce3cfdf00ca615abcf2bb62227f5c, type: 2}
-    initialUrl: https://voltstro.dev
+    initialUrl: https://www.google.com
     resolution:
       Width: 1920
       Height: 1080
@@ -341,6 +342,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372071948}
   m_CullTransparentMesh: 1
+--- !u!114 &372071953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372071948}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd218978acc6f44e810dfebeec4b1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url:
+    engine: {fileID: 11400000, guid: 649ce3cfdf00ca615abcf2bb62227f5c, type: 2}
+    initialUrl: 
+    resolution:
+      Width: 1920
+      Height: 1080
+    backgroundColor:
+      serializedVersion: 2
+      rgba: 16711422
+    javascript: 1
+    cache: 0
+    incognitoMode: 0
+    localStorage: 1
+    popupAction: 0
+    proxySettings:
+      Username: 
+      Password: 
+      ProxyServer: 0
+    webRtc: 0
+    remoteDebugging: 0
+    remoteDebuggingPort: 9022
+    remoteDebuggingAllowedOrigins: []
+    jsMethodManager:
+      jsMethodsEnable: 0
+    ignoreSslErrors: 0
+    noSandbox: 0
+    ignoreSslErrorsDomains: []
+    communicationLayer: {fileID: 11400000, guid: 05fef73d64ae908d1b4ec02a676d1ccc, type: 2}
+    engineStartupTimeout: 1000
+    logSeverity: 0
+    ignoreLogProcessJsonErrors: 0
 --- !u!1 &748408306
 GameObject:
   m_ObjectHideFlags: 0
