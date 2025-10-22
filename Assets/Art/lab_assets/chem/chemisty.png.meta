@@ -1,0 +1,1067 @@
+fileFormatVersion: 2
+guid: 7dd67e00cf798cc47965da2d2003ea11
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7740064533482081370
+    second: chemisty_0
+  - first:
+      213: -1360695430955683826
+    second: chemisty_1
+  - first:
+      213: 8486871203051863762
+    second: chemisty_2
+  - first:
+      213: 6945950160971329552
+    second: chemisty_3
+  - first:
+      213: -8057449219945022329
+    second: chemisty_4
+  - first:
+      213: 3697629158549806107
+    second: chemisty_5
+  - first:
+      213: 6577452718174544375
+    second: chemisty_6
+  - first:
+      213: 7594968314665467917
+    second: chemisty_7
+  - first:
+      213: -5014217540088372363
+    second: chemisty_8
+  - first:
+      213: -7834173906865338395
+    second: chemisty_9
+  - first:
+      213: -7826014084743674079
+    second: chemisty_10
+  - first:
+      213: -8484133748401175709
+    second: chemisty_11
+  - first:
+      213: -8783217074498953663
+    second: chemisty_12
+  - first:
+      213: 5429012098154270265
+    second: chemisty_13
+  - first:
+      213: 6096840550214227084
+    second: chemisty_14
+  - first:
+      213: 6069896852485649088
+    second: chemisty_15
+  - first:
+      213: -8821941333632022414
+    second: chemisty_16
+  - first:
+      213: -1718878023814068149
+    second: chemisty_17
+  - first:
+      213: -144519611627272213
+    second: chemisty_18
+  - first:
+      213: -9202450365653249050
+    second: chemisty_19
+  - first:
+      213: -3472290279824695313
+    second: chemisty_20
+  - first:
+      213: -1301551038611059770
+    second: chemisty_21
+  - first:
+      213: -2571050940580190246
+    second: chemisty_22
+  - first:
+      213: 5673472455732305332
+    second: chemisty_23
+  - first:
+      213: 590454488624952995
+    second: chemisty_24
+  - first:
+      213: 8095131684738396317
+    second: chemisty_25
+  - first:
+      213: 8935317643768757045
+    second: chemisty_26
+  - first:
+      213: 8247492000875666522
+    second: chemisty_27
+  - first:
+      213: -4367094905799450936
+    second: chemisty_28
+  - first:
+      213: -5547730090551717013
+    second: chemisty_29
+  - first:
+      213: -6701965849911330205
+    second: chemisty_30
+  - first:
+      213: 2914619247306525350
+    second: chemisty_31
+  - first:
+      213: 5894272942079213022
+    second: chemisty_32
+  - first:
+      213: -3753993918396351766
+    second: chemisty_33
+  - first:
+      213: 3586619623760017872
+    second: chemisty_34
+  - first:
+      213: -3252318725891752716
+    second: chemisty_35
+  - first:
+      213: -7170366339011390832
+    second: chemisty_36
+  - first:
+      213: 6553919276270771486
+    second: chemisty_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chemisty_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1038
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3733fb054c59490800000000000000
+      internalID: -7740064533482081370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1029
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00b36ef6b6dd1de0800000000000000
+      internalID: -1360695430955683826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 901
+        width: 96
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2def560d46c67c570800000000000000
+      internalID: 8486871203051863762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_3
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 900
+        width: 63
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0107344ced8f46060800000000000000
+      internalID: 6945950160971329552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_4
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 901
+        width: 70
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cbd69ef903e2090800000000000000
+      internalID: -8057449219945022329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_5
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 900
+        width: 115
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cdc7af02e905330800000000000000
+      internalID: 3697629158549806107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_6
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 900
+        width: 143
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1a8b9f56ec74b50800000000000000
+      internalID: 6577452718174544375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_7
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 726
+        width: 96
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d008bfb317fb66960800000000000000
+      internalID: 7594968314665467917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 726
+        width: 49
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573ef78b6bbe96ab0800000000000000
+      internalID: -5014217540088372363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_9
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 722
+        width: 97
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e748a4c65c674390800000000000000
+      internalID: -7834173906865338395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_10
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 722
+        width: 238
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12746a767a9646390800000000000000
+      internalID: -7826014084743674079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_11
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 721
+        width: 108
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36305a38e4d424a80800000000000000
+      internalID: -8484133748401175709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 551
+        width: 96
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e18513b9ebb1680800000000000000
+      internalID: -8783217074498953663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_13
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 550
+        width: 119
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e88c73db9b75b40800000000000000
+      internalID: 5429012098154270265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_14
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 550
+        width: 87
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8457bf8d245c9450800000000000000
+      internalID: 6096840550214227084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_15
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 550
+        width: 84
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c23ba3170b9c3450800000000000000
+      internalID: 6069896852485649088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_16
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 550
+        width: 84
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2780783091b229580800000000000000
+      internalID: -8821941333632022414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_17
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 582
+        width: 155
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48465a5b815528e0800000000000000
+      internalID: -1718878023814068149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_18
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 380
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be701edcd209efdf0800000000000000
+      internalID: -144519611627272213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 379
+        width: 88
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3131c26245a4080800000000000000
+      internalID: -9202450365653249050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_20
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 379
+        width: 80
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fefd1023362ffcfc0800000000000000
+      internalID: -3472290279824695313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_21
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 378
+        width: 39
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb0c8ee936ffede0800000000000000
+      internalID: -1301551038611059770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_22
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 379
+        width: 67
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7a843aacac15cd0800000000000000
+      internalID: -2571050940580190246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_23
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 379
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd13ee93293cbe40800000000000000
+      internalID: 5673472455732305332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_24
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 207
+        width: 119
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a67682aa37b13800800000000000000
+      internalID: 590454488624952995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_25
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 209
+        width: 118
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9077de906fa75070800000000000000
+      internalID: 8095131684738396317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_26
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 209
+        width: 62
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53bfd104e00a00c70800000000000000
+      internalID: 8935317643768757045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_27
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 209
+        width: 87
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cd118174af47270800000000000000
+      internalID: 8247492000875666522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_28
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 210
+        width: 72
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ced76f2256f463c0800000000000000
+      internalID: -4367094905799450936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_29
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 209
+        width: 80
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b635be230e08203b0800000000000000
+      internalID: -5547730090551717013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_30
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 46
+        width: 62
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a7c3b6195ddf2a0800000000000000
+      internalID: -6701965849911330205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_31
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 46
+        width: 68
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aac83b53cec27820800000000000000
+      internalID: 2914619247306525350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_32
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 41
+        width: 36
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddf3d9f20aacc150800000000000000
+      internalID: 5894272942079213022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_33
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 43
+        width: 110
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea3205bb6227ebc0800000000000000
+      internalID: -3753993918396351766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_34
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 50
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d939aa8b8b36c130800000000000000
+      internalID: 3586619623760017872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_35
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 60
+        width: 90
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fcfedea9517dd2d0800000000000000
+      internalID: -3252318725891752716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_36
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 68
+        width: 88
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092decd0ecdbd7c90800000000000000
+      internalID: -7170366339011390832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemisty_37
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 32
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d54bc8bd234fa50800000000000000
+      internalID: 6553919276270771486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

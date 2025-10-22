@@ -153,10 +153,10 @@ RectTransform:
   - {fileID: 1371000347}
   m_Father: {fileID: 107474884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131.72733, y: -123.19567}
-  m_SizeDelta: {x: 263.45465, y: 62.130447}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30555839
 MonoBehaviour:
@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1151706887}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: OpenProgrammingTyping
+        m_MethodName: OpenTyping
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &148820006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,9 +811,9 @@ RectTransform:
   - {fileID: 452995823}
   m_Father: {fileID: 1324934512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 88.4775, y: -20.005}
   m_SizeDelta: {x: 176.955, y: 40.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &327557086
@@ -1581,10 +1581,10 @@ RectTransform:
   - {fileID: 1103822599}
   m_Father: {fileID: 1465497556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 222.46, y: -50}
+  m_SizeDelta: {x: 111.9, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439726110
 MonoBehaviour:
@@ -2684,7 +2684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &691917472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3913,10 +3913,10 @@ RectTransform:
   - {fileID: 427079243}
   m_Father: {fileID: 1465497556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 555.48, y: -50}
+  m_SizeDelta: {x: 111.9, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &750711634
 MonoBehaviour:
@@ -4169,7 +4169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allLabs:
-  - {fileID: 11400000, guid: eccf335e6d7593b4dac19d8b225403d6, type: 2}
+  - {fileID: 11400000, guid: c66d99a56c749954cbf9fef50ae1e1cb, type: 2}
+  - {fileID: 11400000, guid: 1f1b4d444bedba44ca803eadc66d4318, type: 2}
 --- !u!114 &792465471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4195,7 +4196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   semesters:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 1e4f2803e4eb1b340a6b953a9a8352a2, type: 2}
+  - {fileID: 11400000, guid: c8baaae134f03e44cb073564bdb31418, type: 2}
 --- !u!114 &792465473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4211,7 +4213,8 @@ MonoBehaviour:
   playerProgress:
     currentSemester: 1
     totalStars: 0
-    completedLabs: []
+    completedLabs:
+    - 
     completedQuests: []
 --- !u!4 &792465474
 Transform:
@@ -5148,14 +5151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d7f12108006e5f4c93f2519a8d54c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ComputerScreen: {fileID: 1854008828}
   MenuScreen: {fileID: 691917471}
   MCQCanvas: {fileID: 148820005}
   TypingCanvas: {fileID: 962982882}
   McqManager: {fileID: 703063102}
   TypingManager: {fileID: 1223089534}
-  programmingLabData: {fileID: 11400000, guid: eccf335e6d7593b4dac19d8b225403d6, type: 2}
-  Player: {fileID: 2074628121}
 --- !u!4 &1151706888
 Transform:
   m_ObjectHideFlags: 0
@@ -5546,9 +5546,9 @@ RectTransform:
   - {fileID: 1456620221}
   m_Father: {fileID: 1324934512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 598.4896, y: -20.005}
   m_SizeDelta: {x: 163.0692, y: 40.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324252119
@@ -6733,10 +6733,10 @@ RectTransform:
   - {fileID: 329957201}
   m_Father: {fileID: 1465497556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 55.95, y: -50}
+  m_SizeDelta: {x: 111.9, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1759587723
 MonoBehaviour:
@@ -6854,10 +6854,10 @@ RectTransform:
   - {fileID: 782347680}
   m_Father: {fileID: 107474884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131.72733, y: -31.065224}
-  m_SizeDelta: {x: 263.45465, y: 62.130447}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1775188992
 MonoBehaviour:
@@ -6905,7 +6905,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1151706887}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: OpenProgrammingMCQ
+        m_MethodName: OpenMCQ
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12483,10 +12483,10 @@ RectTransform:
   - {fileID: 423762577}
   m_Father: {fileID: 1465497556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 388.97003, y: -50}
+  m_SizeDelta: {x: 111.9, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2100346894
 MonoBehaviour:

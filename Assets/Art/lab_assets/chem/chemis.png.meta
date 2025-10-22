@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: 415ccb214d864144abcb433c5c725465
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3493032731889114043
+    second: chemis_0
+  - first:
+      213: 3335209508634710562
+    second: chemis_1
+  - first:
+      213: 4002183447970999801
+    second: chemis_2
+  - first:
+      213: -8666110248267419033
+    second: chemis_3
+  - first:
+      213: -686500172580189218
+    second: chemis_4
+  - first:
+      213: -3842560641696420239
+    second: chemis_5
+  - first:
+      213: 5409475800132753171
+    second: chemis_6
+  - first:
+      213: 3233303781483503459
+    second: chemis_7
+  - first:
+      213: -3923116734666649766
+    second: chemis_8
+  - first:
+      213: -5175398466673781005
+    second: chemis_9
+  - first:
+      213: -4411014682178405352
+    second: chemis_10
+  - first:
+      213: -3871540424318437729
+    second: chemis_11
+  - first:
+      213: -2112842757762926683
+    second: chemis_12
+  - first:
+      213: 1515839510454299452
+    second: chemis_13
+  - first:
+      213: 2919106967031103825
+    second: chemis_14
+  - first:
+      213: -8813009176788203578
+    second: chemis_15
+  - first:
+      213: 2974048348833326481
+    second: chemis_16
+  - first:
+      213: -6290075391791911022
+    second: chemis_17
+  - first:
+      213: 8340304656982946636
+    second: chemis_18
+  - first:
+      213: -5402829362432810457
+    second: chemis_19
+  - first:
+      213: -6698214140475173316
+    second: chemis_20
+  - first:
+      213: 5696001590839598196
+    second: chemis_21
+  - first:
+      213: 7623704219148435897
+    second: chemis_22
+  - first:
+      213: -155922645537654311
+    second: chemis_23
+  - first:
+      213: 2040533239163426153
+    second: chemis_24
+  - first:
+      213: -5660206661974488740
+    second: chemis_25
+  - first:
+      213: 2288204911851526324
+    second: chemis_26
+  - first:
+      213: 8143439678919692773
+    second: chemis_27
+  - first:
+      213: 4942132216331087812
+    second: chemis_28
+  - first:
+      213: -4826498103795445811
+    second: chemis_29
+  - first:
+      213: -1704399018514862048
+    second: chemis_30
+  - first:
+      213: -8680308425799266499
+    second: chemis_31
+  - first:
+      213: -7275038940130269848
+    second: chemis_32
+  - first:
+      213: -7365664862838287036
+    second: chemis_33
+  - first:
+      213: 7274071042208106949
+    second: chemis_34
+  - first:
+      213: -1158029225388854154
+    second: chemis_35
+  - first:
+      213: -2440704898906219025
+    second: chemis_36
+  - first:
+      213: 52752499091022821
+    second: chemis_37
+  - first:
+      213: -8750577389991311469
+    second: chemis_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chemis_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1031
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544efeabc31468fc0800000000000000
+      internalID: -3493032731889114043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 886
+        width: 102
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2225dad906b094e20800000000000000
+      internalID: 3335209508634710562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 881
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd624634ac9a8730800000000000000
+      internalID: 4002183447970999801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 894
+        width: 49
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762f5abe4aacbb780800000000000000
+      internalID: -8666110248267419033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_4
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 894
+        width: 49
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb0d13fabf0976f0800000000000000
+      internalID: -686500172580189218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_5
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 894
+        width: 48
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ea9c3847b7caac0800000000000000
+      internalID: -3842560641696420239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_6
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 860
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3171cff5491521b40800000000000000
+      internalID: 5409475800132753171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 724
+        width: 122
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f504298a00fdc20800000000000000
+      internalID: 3233303781483503459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_8
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 719
+        width: 120
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fcdc98d1a4e89c0800000000000000
+      internalID: -3923116734666649766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_9
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 724
+        width: 62
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6dec6d38a4d28b0800000000000000
+      internalID: -5175398466673781005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_10
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 719
+        width: 118
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c39b1648de8c2c0800000000000000
+      internalID: -4411014682178405352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_11
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 728
+        width: 55
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f963fe21f76854ac0800000000000000
+      internalID: -3871540424318437729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_12
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 753
+        width: 93
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7b845c4bcada2e0800000000000000
+      internalID: -2112842757762926683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_13
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 551
+        width: 122
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b6125e008590510800000000000000
+      internalID: 1515839510454299452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_14
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 551
+        width: 118
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151c1470250c28820800000000000000
+      internalID: 2919106967031103825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_15
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 550
+        width: 103
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c70847d8d6e1b580800000000000000
+      internalID: -8813009176788203578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_16
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 551
+        width: 118
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1952c015731f54920800000000000000
+      internalID: 2974048348833326481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_17
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 551
+        width: 63
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f21d5e1c925b8a0800000000000000
+      internalID: -6290075391791911022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_18
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 580
+        width: 131
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43310e85e6beb370800000000000000
+      internalID: 8340304656982946636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_19
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 391
+        width: 116
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722642ef15b4505b0800000000000000
+      internalID: -5402829362432810457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_20
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 339
+        width: 122
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c369a775ab92b03a0800000000000000
+      internalID: -6698214140475173316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_21
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 347
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47cdd06a4434c0f40800000000000000
+      internalID: 5696001590839598196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_22
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 401
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b14dfe5896dcc960800000000000000
+      internalID: 7623704219148435897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_23
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 343
+        width: 121
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9f9441e2d06ddf0800000000000000
+      internalID: -155922645537654311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_24
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 368
+        width: 88
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96596b87b2e615c10800000000000000
+      internalID: 2040533239163426153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_25
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 368
+        width: 63
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5906bda708e271b0800000000000000
+      internalID: -5660206661974488740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_26
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 348
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8d6307e3651cf10800000000000000
+      internalID: 2288204911851526324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_27
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 173
+        width: 121
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e154dffd3f430170800000000000000
+      internalID: 8143439678919692773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_28
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 178
+        width: 119
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfad63f01bf59440800000000000000
+      internalID: 4942132216331087812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_29
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 174
+        width: 121
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf0d26eb85d40db0800000000000000
+      internalID: -4826498103795445811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_30
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 189
+        width: 83
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020b5e97f12c858e0800000000000000
+      internalID: -1704399018514862048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_31
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 310
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f876b1a79598780800000000000000
+      internalID: -8680308425799266499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_32
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 193
+        width: 89
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865a666f0aed90b90800000000000000
+      internalID: -7275038940130269848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_33
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 61
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44592fb05d6e7c990800000000000000
+      internalID: -7365664862838287036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_34
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 62
+        width: 43
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c905cdb211b2f460800000000000000
+      internalID: 7274071042208106949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_35
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 69
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6743d251e8addefe0800000000000000
+      internalID: -1158029225388854154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_36
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 68
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed932b63dfd02ed0800000000000000
+      internalID: -2440704898906219025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_37
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 64
+        width: 43
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3a5515e1a6bb000800000000000000
+      internalID: 52752499091022821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chemis_38
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 32
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397c002f934bf8680800000000000000
+      internalID: -8750577389991311469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
