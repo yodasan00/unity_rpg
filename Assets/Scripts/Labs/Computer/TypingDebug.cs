@@ -18,10 +18,6 @@ public class TypingDebug : MonoBehaviour
     private List<TypingQuestion> questions;
     private int currentIndex = 0;
     private int score = 0;
-
-    /// <summary>
-    /// Starts the typing/code mode for a given QuestionSet
-    /// </summary>
     public void StartTypingMode(QuestionSet set)
     {
         if (set == null || set.typingQuestions == null || set.typingQuestions.Length == 0)
@@ -95,6 +91,3 @@ public class TypingDebug : MonoBehaviour
     }
 }
 
-/// <summary>
-/// Example class for typing/code questions inside QuestionSet
-/// </summary>

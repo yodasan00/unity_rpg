@@ -28,15 +28,18 @@ public class InputFieldTextColorChanger : MonoBehaviour
         }
     }
 
-    // You can call this method from other scripts or a UI event.
-    // For example, from an OnValueChanged event in the Inspector.
+
     void Update()
     {
-        // Example: Change color to red if the input text is "invalid".
-        // You could also hook this up to a button's OnClick() event.
+
         if (myInputField.text == "invalid")
         {
             SetInputTextColor(Color.red);
         }
     }
 }
+
+
+
+
+//this code is not usedd as it new ver of unity le primary font ko color change garnu dindaina externanlly

@@ -30,8 +30,7 @@ public class DialogueSystem : MonoBehaviour
 
     void Start()
     {
-        
-        // Deactivate the dialogue UI at the start.
+
         if (dialogueCanvas != null)
         {
             dialogueCanvas.SetActive(false);
@@ -42,16 +41,20 @@ public class DialogueSystem : MonoBehaviour
 
     void Update()
     {
-        if (playerIsInTrigger && Input.GetKeyDown(KeyCode.Space) && !isDialogueActive){
+        if (playerIsInTrigger && Input.GetKeyDown(KeyCode.Space) && !isDialogueActive)
+        {
             StartDialogue();
         }
-        else if (isDialogueActive && Input.GetKeyDown(KeyCode.Space)){
-            if (isTyping){
+        else if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isTyping)
+            {
                 StopCoroutine(typeCoroutine);
                 dialogueText.text = dialogueLines[currentLineIndex];
                 isTyping = false;
             }
-            else{
+            else
+            {
                 currentLineIndex++;
                 if (currentLineIndex < minLength)
                 {
@@ -92,7 +95,6 @@ public class DialogueSystem : MonoBehaviour
         StartLine();
     }
 
-    // Starts a single line of dialogue.
     private void StartLine()
     {
         if (currentLineIndex < minLength && speakerText != null && portraitImage != null)
@@ -130,7 +132,6 @@ public class DialogueSystem : MonoBehaviour
         isTyping = false;
     }
 
-    // Ends the dialogue and resets the state.
     private void EndDialogue()
     {
         if (typeCoroutine != null)
@@ -146,3 +147,6 @@ public class DialogueSystem : MonoBehaviour
         currentLineIndex = 0;
     }
 }
+
+
+//handles dialouge interactions with NPCs

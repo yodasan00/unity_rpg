@@ -10,14 +10,14 @@ public class PYQTrigger : MonoBehaviour
 
     public PlayerController Player;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         Debug.Log("Pyq started");
         Book.SetActive(false);
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && istrigger)
@@ -47,3 +47,6 @@ public class PYQTrigger : MonoBehaviour
     }
 
 }
+
+//same trigger logic as computer manager 
+//will make a unifited or base trigger for everthing later

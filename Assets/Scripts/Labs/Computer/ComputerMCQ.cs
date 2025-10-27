@@ -131,9 +131,6 @@ public class ComputerMCQ : MonoBehaviour
     private int currentQuestionIndex = 0;
     private int score = 0;
 
-    /// <summary>
-    /// Starts the MCQ mode for a lab with a specific QuestionSet
-    /// </summary>
     public void StartMCQ(QuestionSet set)
     {
         if (set == null || set.questions.Length == 0)
@@ -142,8 +139,8 @@ public class ComputerMCQ : MonoBehaviour
             return;
         }
 
-        questions = new List<QuestionData>(set.questions);
-        ShuffleQuestions(); // Shuffle questions
+        questions = new List<QuestionData>(set.questions); //gets the question set from the menu manger
+        ShuffleQuestions(); 
         currentQuestionIndex = 0;
         score = 0;
         resultPanel.SetActive(false);
@@ -164,7 +161,7 @@ public class ComputerMCQ : MonoBehaviour
         remainingText.text = $"Remaining: {questions.Count - currentQuestionIndex}/{questions.Count}";
         scoreText.text = $"Score: {score}";
 
-        // Shuffle options for this question
+       //shuffle options based on the current question and the correct answer
         List<string> shuffledOptions = new List<string>(q.options);
         for (int i = 0; i < shuffledOptions.Count; i++)
         {
@@ -206,10 +203,9 @@ public class ComputerMCQ : MonoBehaviour
         resultPanel.SetActive(true);
         resultText.text = $"Stars Earned: {score}";
 
-        // Notify LabManager that lab is complete
         if (LabManager.Instance != null)
         {
-            LabManager.Instance.CompleteLab(score);
+            LabManager.Instance.CompleteLab(score); //Notify LabManager with score
         }
         else
         {

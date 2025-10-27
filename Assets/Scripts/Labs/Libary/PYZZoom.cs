@@ -95,11 +95,9 @@ public class PYZZoom : MonoBehaviour, IDragHandler, IScrollHandler
         Player.enabled = true;
     }
 
-
-
-
-
 }
+
+//for navigation between panels in pyq library UI
 
 
 

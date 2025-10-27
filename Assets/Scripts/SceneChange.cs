@@ -5,30 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class Scene_change : MonoBehaviour
 {
-    
+
     [SerializeField] private string sceneName;
 
-    
+
     [SerializeField] private CanvasGroup fadePanel;
 
-    
+
     [SerializeField] private float fadeDuration = 1.0f;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        
+
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player has entered the doorway. Starting fade...");
-           
-            StartCoroutine(FadeOutAndLoad(sceneName)); 
+
+            StartCoroutine(FadeOutAndLoad(sceneName));
         }
     }
 
-    
+
     private IEnumerator FadeOutAndLoad(string sceneToLoad)
     {
-        
+
         fadePanel.gameObject.SetActive(true);
         fadePanel.alpha = 0;
         float timer = 0f;
@@ -36,7 +36,7 @@ public class Scene_change : MonoBehaviour
         {
             fadePanel.alpha = Mathf.Lerp(0, 1, timer / fadeDuration);
             timer += Time.deltaTime;
-            yield return null; 
+            yield return null;
         }
 
         fadePanel.alpha = 1;
@@ -45,3 +45,6 @@ public class Scene_change : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 }
+
+
+//manages scene transitions with fade effect when player enters a trigger area

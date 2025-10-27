@@ -17,7 +17,7 @@ public class QuestManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    // Assign new daily quests
+    //new daily quests
     public void AssignDailyQuests(int dailyCount)
     {
         activeQuests.Clear();
@@ -26,14 +26,13 @@ public class QuestManager : MonoBehaviour
         for (int i = 0; i < Mathf.Min(dailyCount, dailyQuests.Count); i++)
         {
             QuestData quest = Instantiate(dailyQuests[i]);
-            quest.currentProgress = 0; // reset progress
+            quest.currentProgress = 0; 
             activeQuests.Add(quest);
         }
 
         Debug.Log($"Assigned {activeQuests.Count} daily quests.");
     }
 
-    // Update progress for a quest
     public void UpdateQuestProgress(string questID, int amount = 1)
     {
         QuestData quest = activeQuests.Find(q => q.questID == questID);
@@ -50,7 +49,6 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    // Complete quest and give rewards
     private void CompleteQuest(QuestData quest)
     {
         activeQuests.Remove(quest);
@@ -58,3 +56,5 @@ public class QuestManager : MonoBehaviour
         Debug.Log($"Quest Completed: {quest.questName} | Reward: {quest.rewardStars} stars");
     }
 }
+
+//manages quests including assignment, progress tracking, and completion rewards

@@ -1,3 +1,5 @@
+//USed for Quest
+
 using UnityEngine;
 
 public enum QuestType { Lab, MCQ, Collection, Interaction }

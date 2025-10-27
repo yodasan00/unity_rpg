@@ -34,7 +34,7 @@ public class PyqPdfLibary : MonoBehaviour
         subjectPanel.SetActive(false);
         pdfViewerPanel.SetActive(false);
     }
-    // ------------------- Department -------------------
+   
     public void OnDepartmentSelected(string department)
     {
         selectedDepartment = department;
@@ -42,7 +42,7 @@ public class PyqPdfLibary : MonoBehaviour
         departmentPanel.SetActive(false);
     }
 
-    // ------------------- Year -------------------
+    
     public void OnYearSelected(string year)
     {
         selectedYear = year;
@@ -51,12 +51,12 @@ public class PyqPdfLibary : MonoBehaviour
         ShowSubjects();
     }
 
-    // ------------------- Subject Panel -------------------
+  
     void ShowSubjects()
     {
 
 
-        // Clear old buttons
+       
         foreach (Transform child in subjectContentParent)
             Destroy(child.gameObject);
 
@@ -86,7 +86,7 @@ public class PyqPdfLibary : MonoBehaviour
         }
     }
 
-    // ------------------- Open Subject -------------------
+ 
     void OpenSubject(string folderPath)
     {
         selectedSubject = folderPath;
@@ -94,7 +94,7 @@ public class PyqPdfLibary : MonoBehaviour
         currentPageIndex = 0;
 
         string[] pageFiles = Directory.GetFiles(folderPath, "*.png");
-        System.Array.Sort(pageFiles); // Ensure pages are in order
+        System.Array.Sort(pageFiles); // order page
 
         foreach (string file in pageFiles)
         {
@@ -126,7 +126,7 @@ public class PyqPdfLibary : MonoBehaviour
         }
     }
 
-    // ------------------- Navigation -------------------
+   
     void UpdateNavButtons()
     {
         prevButton.interactable = currentPageIndex > 0;

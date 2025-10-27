@@ -10,17 +10,16 @@ public class ComputerManager : MonoBehaviour
 
     public PlayerController Player;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         Debug.Log("Computer Manager started");
         ComputerScreen.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && istrigger)
+        if (Input.GetKeyDown(KeyCode.Space) && istrigger) //press space in the area to start or trigger lab
         {
             Debug.Log("Space key was pressed.");
             ComputerScreen.SetActive(true);
@@ -30,7 +29,7 @@ public class ComputerManager : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)  //checks if the collider is player or random npc or obj
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -38,7 +37,7 @@ public class ComputerManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other) //when player exits the collider
     {
         if (other.gameObject.CompareTag("Player"))
         {
