@@ -203,6 +203,10 @@ public class ComputerMCQ : MonoBehaviour
         resultPanel.SetActive(true);
         resultText.text = $"Stars Earned: {score}";
 
+        if (resultPanel.activeSelf)
+             Debug.Log("Result panel still active!");
+
+
         if (LabManager.Instance != null)
         {
             LabManager.Instance.CompleteLab(score); //Notify LabManager with score

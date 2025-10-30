@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
+
+    public static MenuManager Instance { get; private set; }
     [Header("UI Screens")]
+    [SerializeField] private GameObject Canvas;
     [SerializeField] private GameObject MenuScreen;
     [SerializeField] private GameObject MCQCanvas;
     [SerializeField] private GameObject TypingCanvas;

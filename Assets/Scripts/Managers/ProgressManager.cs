@@ -52,6 +52,7 @@ public class ProgressManager : MonoBehaviour
     public void AddStars(int stars)
     {
         playerProgress.AddStars(stars);
+         HUDManager.Instance.UpdateStars(stars);
         SaveProgress();
         SemesterManager.Instance.TryUnlockNextSemester();
     }

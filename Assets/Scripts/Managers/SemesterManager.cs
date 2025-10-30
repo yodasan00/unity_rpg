@@ -38,6 +38,7 @@ public class SemesterManager : MonoBehaviour
             CurrentSemester = semesters[currentIndex];
             CurrentSemesterIndex = currentIndex;
             Debug.Log("Loaded semester: " + CurrentSemester.semesterName);
+            HUDManager.Instance.UpdateSemester(CurrentSemester.semesterName);
         }
         else
         {
@@ -63,6 +64,7 @@ public class SemesterManager : MonoBehaviour
             ProgressManager.Instance.SaveProgress();
             LoadCurrentSemester();
             Debug.Log($"🎓 Next semester unlocked: {CurrentSemester.semesterName}");
+            HUDManager.Instance.UpdateSemester(CurrentSemester.semesterName);
         }
         else
         {

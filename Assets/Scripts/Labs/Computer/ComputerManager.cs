@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;  
 using TMPro;
+using UnityEditor;
 public class ComputerManager : MonoBehaviour
 {
     [SerializeField]
@@ -22,8 +23,7 @@ public class ComputerManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && istrigger) //press space in the area to start or trigger lab
         {
             Debug.Log("Space key was pressed.");
-            ComputerScreen.SetActive(true);
-            Player.enabled = false;
+            OpenComputer();
         }
 
 
@@ -43,6 +43,20 @@ public class ComputerManager : MonoBehaviour
         {
             istrigger = false;
         }
+    }
+
+    public void OpenComputer()
+    {
+        ComputerScreen.SetActive(true);
+        Player.enabled = false;
+    }
+
+    public void CloseComputer()
+    {
+
+        ComputerScreen.SetActive(false);
+        MenuManager.Instance.CloseLabScreen();  
+        Player.enabled = true;
     }
 
 }
