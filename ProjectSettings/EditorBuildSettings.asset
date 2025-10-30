@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HUD.unity
     guid: fc4835909e5efaa4fb4c98150a7d2f08
+  - enabled: 1
+    path: Assets/Scenes/Passages/BF1.unity
+    guid: 448ed21287b1def46bdbd927863d5a82
+  - enabled: 1
+    path: Assets/Scenes/Passages/BF2.unity
+    guid: 1a08e2ccc625b4a478451e0cdbd01c8b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
