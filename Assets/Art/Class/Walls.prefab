@@ -113,23 +113,17 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - first: {x: -4, y: -1, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 19
       m_TileSpriteIndex: 18
 =======
-=======
->>>>>>> Stashed changes
   - first: {x: 0, y: -2, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 20
       m_TileSpriteIndex: 19
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -308,13 +302,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 09c67053d8e023e4695ef9b9fb2c9e26, type: 2}
   - m_RefCount: 1
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     m_Data: {fileID: 11400000, guid: a89dc174d550903458b046851625ee52, type: 2}
-=======
-    m_Data: {fileID: 11400000, guid: 0253d57794fffb743ba550d25ee73336, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 3586940e44920e54885a97a50f84c9ae, type: 2}
->>>>>>> Stashed changes
 =======
     m_Data: {fileID: 11400000, guid: 0253d57794fffb743ba550d25ee73336, type: 2}
   - m_RefCount: 1
@@ -359,17 +347,9 @@ Tilemap:
     m_Data: {fileID: -5006046633763366022, guid: ebbe5861a4ed46f43940aea561767fa8, type: 3}
   - m_RefCount: 1
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     m_Data: {fileID: -219281508858561926, guid: 9a0554e5b05d7d3489ce66b5e6cf2c72, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 20
-=======
-    m_Data: {fileID: -1602814010, guid: 343f31efc44776641b20637246dff5f2, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1005467597, guid: 343f31efc44776641b20637246dff5f2, type: 3}
-  m_TileMatrixArray:
-  - m_RefCount: 21
->>>>>>> Stashed changes
 =======
     m_Data: {fileID: -1602814010, guid: 343f31efc44776641b20637246dff5f2, type: 3}
   - m_RefCount: 1
@@ -396,7 +376,6 @@ Tilemap:
       e33: 1
   m_TileColorArray:
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - m_RefCount: 17
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 1
@@ -417,23 +396,11 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {r: 0.9180646, g: 0.55169463, b: 0.5999761, a: 1}
   - m_RefCount: 1
-=======
-  - m_RefCount: 18
-    m_Data: {r: 1, g: 1, b: 1, a: 1}
-  - m_RefCount: 1
-    m_Data: {r: 0.70723593, g: 0.34938464, b: 0.4576827, a: 1}
-  - m_RefCount: 1
-    m_Data: {r: 0.9180646, g: 0.55169463, b: 0.5999761, a: 1}
-  - m_RefCount: 1
->>>>>>> Stashed changes
     m_Data: {r: 0.9204761, g: 0.52599907, b: 0.62446576, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -3, y: -4, z: 0}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
   m_Size: {x: 4, y: 7, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -553,11 +520,7 @@ Grid:
   m_CellLayout: 0
   m_CellSwizzle: 0
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 --- !u!114 &1600197066688592578
-=======
---- !u!114 &5295624645648398899
->>>>>>> Stashed changes
 =======
 --- !u!114 &5295624645648398899
 >>>>>>> Stashed changes
