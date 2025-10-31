@@ -2448,17 +2448,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 =======
-=======
->>>>>>> Stashed changes
     - target: {fileID: 1512057775534536681, guid: 97edce0cd15c317418f6f6f1dc87a68e, type: 3}
       propertyPath: m_text
       value: Sleep
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
     - target: {fileID: 1651156793288447659, guid: 97edce0cd15c317418f6f6f1dc87a68e, type: 3}
       propertyPath: m_AnchoredPosition.y
