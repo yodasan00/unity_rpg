@@ -16,6 +16,7 @@ public class PyqPdfLibary : MonoBehaviour
     public GameObject pdfViewerPanel;
     public RawImage pdfDisplay;
     public Button prevButton, nextButton, closeButton;
+    public Button Close, Back;
 
     [Header("Prefabs")]
     public GameObject subjectButtonPrefab;
@@ -109,6 +110,9 @@ public class PyqPdfLibary : MonoBehaviour
             pdfDisplay.texture = pages[0];
             pdfViewerPanel.SetActive(true);
 
+            Close.image.enabled = false;
+            Back.image.enabled = false;
+
             // Assign buttons
             prevButton.onClick.RemoveAllListeners();
             nextButton.onClick.RemoveAllListeners();
@@ -157,6 +161,8 @@ public class PyqPdfLibary : MonoBehaviour
     {
         pdfViewerPanel.SetActive(false);
         pdfDisplay.texture = null;
+        Close.image.enabled = true;
+        Back.image.enabled = true;
     }
 
 }

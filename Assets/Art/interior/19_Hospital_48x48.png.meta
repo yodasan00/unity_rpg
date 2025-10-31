@@ -1722,9 +1722,9 @@ TextureImporter:
       name: 19_Hospital_48x48_11
       rect:
         serializedVersion: 2
-        x: 192
-        y: 4998
-        width: 576
+        x: 240
+        y: 4997
+        width: 189
         height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -11640,6 +11640,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_462
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 5058
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f31ceb7c870714996a74c8e4ff0428
+      internalID: -2099396781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -12058,6 +12080,7 @@ TextureImporter:
       19_Hospital_48x48_46: 1248587748550088942
       19_Hospital_48x48_460: -2080906781
       19_Hospital_48x48_461: 1775287084
+      19_Hospital_48x48_462: -2099396781
       19_Hospital_48x48_47: 884200885451927698
       19_Hospital_48x48_48: -3309521736633990538
       19_Hospital_48x48_49: -7418206090354047194
