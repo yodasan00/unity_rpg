@@ -282,6 +282,7 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0606255c90c01f5499a698f8bbc1f6ea, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1051100388
 GameObject:
   m_ObjectHideFlags: 0
@@ -25609,6 +25610,8 @@ MonoBehaviour:
   sceneName: Main
   fadePanel: {fileID: 78996885}
   fadeDuration: 1.5
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
