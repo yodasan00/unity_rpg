@@ -28,28 +28,6 @@ MonoBehaviour:
     - ;
     correctOption: ;
   typingQuestions:
-  - buggyCode: '#include <stdio.h>
-
-      int main(){
-
-      for(int i = 0; i < 5
-      ; i)
-
-      printf("%d\n",i)
-
-      return 0;
-
-      }'
-    correctCode: '#include <stdio.h>
-
-      int main(){
-
-      for(int i = 0; i <
-      5 ; i++)
-
-      printf("%d\n",i);
-
-      return 0;
-
-      }'
+  - buggyCode: for(int i=0 i<5 i++) { Console.WriteLine(i) }
+    correctCode: for(int i = 0; i < 5; i++) { Console.WriteLine(i); }
     expectedOutput: 0\n1\n2\n3\n4

@@ -57,34 +57,20 @@ public class SemesterManager : MonoBehaviour
     }
 
     public void TryUnlockNextSemester()
-{
-    var progress = ProgressManager.Instance.playerProgress;
-
-    if (CanUnlockNextSemester())
     {
-        // 🔹 Move all daily completed labs into permanent completed list
-        foreach (var key in progress.dailyCompletedLabs)
+        if (CanUnlockNextSemester())
         {
-            if (!progress.completedLabs.Contains(key))
-                progress.completedLabs.Add(key);
+            ProgressManager.Instance.playerProgress.currentSemester++;
+            ProgressManager.Instance.SaveProgress();
+            LoadCurrentSemester();
+            Debug.Log($"🎓 Next semester unlocked: {CurrentSemester.semesterName}");
+            HUDManager.Instance.UpdateSemester(CurrentSemester.semesterName);
         }
-
-        // Clear daily progress and move to next semester
-        progress.ResetDailyProgress();
-        progress.UnlockNextSemester();
-        ProgressManager.Instance.SaveProgress();
-
-        LoadCurrentSemester();
-
-        Debug.Log($"🎓 Next semester unlocked: {CurrentSemester.semesterName}");
-        HUDManager.Instance.UpdateSemester(CurrentSemester.semesterName);
+        else
+        {
+            Debug.Log("Not enough stars to unlock next semester.");
+        }
     }
-    else
-    {
-        Debug.Log("Not enough stars to unlock next semester.");
-    }
-}
-
 }
 
 //manages semesters including loading current sem and unlocking next sem on star
