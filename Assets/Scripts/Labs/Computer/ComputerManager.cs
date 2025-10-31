@@ -6,6 +6,10 @@ public class ComputerManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject ComputerScreen;
+    [SerializeField] private GameObject Menu;
+    [SerializeField] private GameObject MCQCanvas;
+    [SerializeField] private GameObject TypingCanvas;
+
 
     private bool istrigger = false;
 
@@ -55,7 +59,9 @@ public class ComputerManager : MonoBehaviour
     {
 
         ComputerScreen.SetActive(false);
-        MenuManager.Instance.CloseLabScreen();  
+        MCQCanvas.SetActive(false);
+        TypingCanvas.SetActive(false);
+        Menu.SetActive(true);
         Player.enabled = true;
     }
 
