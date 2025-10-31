@@ -5,7 +5,6 @@ using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
 
-    public static MenuManager Instance { get; private set; }
     [Header("UI Screens")]
     [SerializeField] private GameObject Canvas;
     [SerializeField] private GameObject MenuScreen;
@@ -23,14 +22,14 @@ public class MenuManager : MonoBehaviour
         TypingCanvas.SetActive(false);
     }
 
-    public void CloseLabScreen()
-    {
-        MCQCanvas.SetActive(false);
-        TypingCanvas.SetActive(false);
-        MenuScreen.SetActive(true);
-    }
+    // public void CloseLabScreen()
+    // {
+    //     MCQCanvas.SetActive(false);
+    //     TypingCanvas.SetActive(false);
+    //     MenuScreen.SetActive(true);
+    // }
 
-    public void OpenMCQ() //foe button press
+    public void OpenMCQ() //for button press
     {
         LabData lab = GetNextLab();
         if (lab != null)

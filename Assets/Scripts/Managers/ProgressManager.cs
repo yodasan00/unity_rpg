@@ -57,18 +57,42 @@ public class ProgressManager : MonoBehaviour
         SemesterManager.Instance.TryUnlockNextSemester();
     }
 
-    public void CompleteLab(LabData lab, int earnedStars)
+    // public void CompleteLab(LabData lab, int earnedStars)
+    // {
+    //     if (playerProgress.HasCompletedLabToday(lab))
+    //     {
+    //         Debug.Log("You have already done this lab today. Try again tomorrow!");
+    //         return;
+    //     }
+
+    //     if (!playerProgress.HasCompletedLab(lab))
+    //     {
+    //         playerProgress.MarkLabCompleted(lab);
+    //         int starsToAdd = Mathf.Min(earnedStars, lab.starReward);
+    //         AddStars(starsToAdd);
+    //         Debug.Log($"Lab completed: {lab.labName}, Stars: {starsToAdd}");
+    //     }
+    //     else
+    //     {
+    //         Debug.Log("Lab already completed in this semester.");
+    //     }
+    // }
+public void CompleteLab(LabData lab, int earnedStars)
 {
-    if (!playerProgress.HasCompletedLab(lab))
+    if (playerProgress.HasCompletedLabToday(lab))
     {
-        playerProgress.MarkLabCompleted(lab);
-
-        int starsToAdd = Mathf.Min(earnedStars, lab.starReward);
-        AddStars(starsToAdd);
-
-        Debug.Log($" Lab completed: {lab.labName} - {lab.subjectName}, Stars Earned: {starsToAdd}");
+        Debug.Log("You already did this lab today. Try again tomorrow!");
+        return;
     }
+
+    playerProgress.MarkLabCompleted(lab);
+
+    int starsToAdd = Mathf.Min(earnedStars, lab.starReward);
+    AddStars(starsToAdd);
+    Debug.Log($"Lab completed: {lab.labName}, Stars Earned: {starsToAdd}");
 }
+
+
 
 
     public bool HasCompletedLab(LabData lab)
@@ -81,6 +105,14 @@ public class ProgressManager : MonoBehaviour
         playerProgress.ResetProgress();
         SaveProgress();
     }
+    public void NextDay()
+{
+    playerProgress.NextDay();
+    SaveProgress();
+    Debug.Log("Moved to next day: " + playerProgress.currentDay);
+    //HUDManager.Instance.Update(playerProgress.currentDay); // optional, if you have HUD
+}
+
 }
 
 //manages player progress including saving/loading and tracking completed labs and stars

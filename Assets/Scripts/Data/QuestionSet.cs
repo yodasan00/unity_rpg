@@ -21,7 +21,10 @@ public class QuestionData
 [System.Serializable]
 public class TypingQuestion
 {
-    public string buggyCode;       //buggy code
-    public string correctCode;     //Correct code
+    [TextArea(10, 20)]
+    public string buggyCode;
+    [TextArea(10, 20)] //buggy code
+    public string correctCode;   
+    [TextArea(10, 20)]  //Correct code
     public string expectedOutput;  //Expected output 
 }
