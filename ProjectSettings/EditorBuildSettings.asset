@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Passages/AF2.unity
     guid: 8ed82748fba37644facac3fae63a618d
   - enabled: 1
-    path: Assets/Scenes/Passages/AF3.unity
+    path: Assets/Scenes/Passages/AF4.unity
     guid: afac768d092315b40abbed08bfe46edd
   - enabled: 1
     path: Assets/Scenes/Passages/B1-2.unity

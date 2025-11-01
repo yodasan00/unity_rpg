@@ -10,23 +10,28 @@ public class Scene_change : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player")) return;
+
+        Debug.Log("Player entered doorway. Starting fade...");
+
+        if (string.IsNullOrEmpty(sceneName))
         {
-            Debug.Log("Player entered doorway. Starting fade...");
+            Debug.LogError("Scene_change: No scene name specified! Scene change aborted.");
+            return; // ✅ Prevents freezing
+        }
 
-            // Save the next spawn point (for PlayerSpawnManager)
-            PlayerSpawnManager.nextSpawnPoint = spawnPointName;
+        // Save next spawn point
+        PlayerSpawnManager.nextSpawnPoint = spawnPointName;
 
-            // Use the global fade manager to fade + load
-            if (FadeManager.Instance != null)
-            {
-                FadeManager.Instance.FadeToScene(sceneName);
-            }
-            else
-            {
-                Debug.LogWarning("No FadeManager found — loading scene instantly.");
-                SceneManager.LoadScene(sceneName);
-            }
+        // Use FadeManager if present
+        if (FadeManager.Instance != null)
+        {
+            FadeManager.Instance.FadeToScene(sceneName);
+        }
+        else
+        {
+            Debug.LogWarning("No FadeManager found — loading scene instantly.");
+            SceneManager.LoadScene(sceneName);
         }
     }
 }

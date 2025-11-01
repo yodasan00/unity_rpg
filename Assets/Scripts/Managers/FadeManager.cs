@@ -14,7 +14,6 @@ public class FadeManager : MonoBehaviour
 
     private void Awake()
     {
-        // Ensure only one instance exists
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -23,14 +22,17 @@ public class FadeManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
-        // Start with fade-in when first loaded
-       // StartCoroutine(FadeIn());
     }
 
-    // 🔹 Fade to a new scene with fade-out → load → fade-in
     public void FadeToScene(string sceneName)
     {
+        // ✅ Prevent coroutine if no scene name is valid
+        if (string.IsNullOrEmpty(sceneName))
+        {
+            Debug.LogError("FadeManager: Attempted to fade to an empty or null scene name. Aborting.");
+            return;
+        }
+
         if (!isFading)
             StartCoroutine(FadeAndSwitchScene(sceneName));
     }
@@ -42,11 +44,18 @@ public class FadeManager : MonoBehaviour
         // Fade out
         yield return StartCoroutine(Fade(0f, 1f));
 
+        // ✅ Double-check before loading
+        if (string.IsNullOrEmpty(sceneName))
+        {
+            Debug.LogError("FadeManager: Scene name was empty during fade transition. Aborting load.");
+            isFading = false;
+            yield break;
+        }
+
         // Load scene
         SceneManager.LoadScene(sceneName);
 
-        // Wait one frame for scene to load before fading in
-        yield return null;
+        yield return null; // Wait one frame
 
         // Fade in
         yield return StartCoroutine(Fade(1f, 0f));
@@ -54,7 +63,6 @@ public class FadeManager : MonoBehaviour
         isFading = false;
     }
 
-    // 🔹 Generic fade coroutine (used for both in & out)
     private IEnumerator Fade(float startAlpha, float endAlpha)
     {
         fadePanel.gameObject.SetActive(true);
@@ -69,16 +77,7 @@ public class FadeManager : MonoBehaviour
 
         fadePanel.alpha = endAlpha;
 
-        // Hide panel if fully transparent
         if (endAlpha == 0f)
             fadePanel.gameObject.SetActive(false);
     }
-
-    // 🔹 Fade-in at startup (optional)
-    // private IEnumerator FadeIn()
-    // {
-    //     fadePanel.alpha = 1f;
-    //     fadePanel.gameObject.SetActive(true);
-    //     yield return StartCoroutine(Fade(1f, 0f));
-    // }
 }
