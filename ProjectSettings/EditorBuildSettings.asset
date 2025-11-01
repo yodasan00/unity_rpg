@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Passages/B2-3.unity
     guid: cfd37dc436e92d1419c673fa95601381
   - enabled: 1
+    path: Assets/Scenes/Hostel/Rooms.unity
+    guid: 9d953b5e18f54914ba40b71f90d87d0d
+  - enabled: 1
     path: Assets/Scenes/lib.unity
     guid: fdd6ae3ce6c4b90428f8349037982856
   m_configObjects:
