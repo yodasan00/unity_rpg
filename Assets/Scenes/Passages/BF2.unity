@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d693d058352d40b2b6948946b8d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 1-2
+  sceneName: B1-2
   spawnPointName: A2
 --- !u!1 &904827033
 GameObject:
@@ -10572,8 +10572,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d693d058352d40b2b6948946b8d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 2-3
-  spawnPointName: A2
+  sceneName: B2-3
+  spawnPointName: A1
 --- !u!1 &934049730
 GameObject:
   m_ObjectHideFlags: 0

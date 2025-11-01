@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d693d058352d40b2b6948946b8d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: BF1
+  sceneName: BF2
   spawnPointName: 
 --- !u!61 &377831959
 BoxCollider2D:
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d693d058352d40b2b6948946b8d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: BF2
+  sceneName: BF3
   spawnPointName: 
 --- !u!61 &1102515756
 BoxCollider2D:
