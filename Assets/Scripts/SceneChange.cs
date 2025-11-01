@@ -1,50 +1,32 @@
-
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Scene_change : MonoBehaviour
 {
+    [Header("Scene Info")]
+    [SerializeField] private string sceneName;          // Scene to load
+    [SerializeField] private string spawnPointName;     // Spawn point in target scene
 
-    [SerializeField] private string sceneName;
-
-
-    [SerializeField] private CanvasGroup fadePanel;
-
-
-    [SerializeField] private float fadeDuration = 1.0f;
-
-    public void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player has entered the doorway. Starting fade...");
+            Debug.Log("Player entered doorway. Starting fade...");
 
-            StartCoroutine(FadeOutAndLoad(sceneName));
+            // Save the next spawn point (for PlayerSpawnManager)
+            PlayerSpawnManager.nextSpawnPoint = spawnPointName;
+
+            // Use the global fade manager to fade + load
+            if (FadeManager.Instance != null)
+            {
+                FadeManager.Instance.FadeToScene(sceneName);
+            }
+            else
+            {
+                Debug.LogWarning("No FadeManager found — loading scene instantly.");
+                SceneManager.LoadScene(sceneName);
+            }
         }
-    }
-
-
-    private IEnumerator FadeOutAndLoad(string sceneToLoad)
-    {
-
-        fadePanel.gameObject.SetActive(true);
-        fadePanel.alpha = 0;
-        float timer = 0f;
-        while (timer < fadeDuration)
-        {
-            fadePanel.alpha = Mathf.Lerp(0, 1, timer / fadeDuration);
-            timer += Time.deltaTime;
-            yield return null;
-        }
-
-        fadePanel.alpha = 1;
-
-        Debug.Log("Fade complete. Loading " + sceneToLoad + "...");
-        SceneManager.LoadScene(sceneToLoad);
     }
 }
-
-
-//manages scene transitions with fade effect when player enters a trigger area
