@@ -16,6 +16,5 @@ MonoBehaviour:
   subjectName: DSLab
   labType: 0
   starReward: 2
-  questionSet: {fileID: 11400000, guid: 3aab60858dfa9814a96a37fb04255f94, type: 2}
-  experimentPrefab: {fileID: 0}
-  maxStars: 0
+  questionSet: {fileID: 11400000, guid: 97834e670dfa15c4b802ea4140260ac1, type: 2}
+  chemistryExperiments: []

@@ -136,7 +136,7 @@ public class LabManager : MonoBehaviour
 
         var progress = ProgressManager.Instance.playerProgress;
 
-        // 🔹 If the lab was already completed in this semester, don’t give stars again
+        //If the lab was already completed in this semester, don’t give stars again
         bool firstCompletion = !progress.HasCompletedLab(CurrentLab);
         int starsToGive = firstCompletion ? starsEarned : 0;
 

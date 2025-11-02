@@ -25,7 +25,7 @@ public class HUDManager : MonoBehaviour
     private void Start()
     {
         UpdateStars(0);
-        UpdateSemester("Semester 1");
+        UpdateSemester("1");
         UpdateTime("Day 1");
     }
 

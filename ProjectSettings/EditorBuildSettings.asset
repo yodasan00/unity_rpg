@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Passages/B1-2.unity
     guid: a32ff9dff3fc1e747bd8b64747736450
   - enabled: 1
+    path: Assets/Scenes/Passages/A3-4.unity
+    guid: 8f1614cf3407ba94f83a550b8778d0b3
+  - enabled: 1
     path: Assets/Scenes/Passages/A1-2.unity
     guid: 21ef12119a389e541b34ea9233270f6d
   - enabled: 1

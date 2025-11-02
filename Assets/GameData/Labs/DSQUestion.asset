@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c73bada57f4dbc45b34bc0ff309a0b8, type: 3}
+  m_Name: DSQUestion
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Which data structure uses LIFO (Last In First Out) ordering?
+    options:
+    - Queue
+    - Stack
+    - Linked List
+    - Array
+    correctOption: Stack
+  - questionText: What is the time complexity of searching an element in a balanced
+      binary search tree (BST)?
+    options:
+    - O(1)
+    - O(log n)
+    - O(n)
+    - "O(n\xB2)"
+    correctOption: O(log n)
+  - questionText: Which of the following data structures allows insertion and deletion
+      at both ends?
+    options:
+    - Stack
+    - Queue
+    - Deque
+    - Circular Queue
+    correctOption: Deque
+  - questionText: In Java, which class implements a dynamic array?
+    options:
+    - ArrayList
+    - LinkedList
+    - Vector
+    - Stack
+    correctOption: ArrayList
+  - questionText: Which traversal of a binary tree gives nodes in non-decreasing
+      order?
+    options:
+    - Preorder
+    - Postorder
+    - Inorder
+    - Level-order
+    correctOption: Inorder
+  - questionText: Which data structure is used to implement recursion?
+    options:
+    - Queue
+    - Stack
+    - Tree
+    - Graph
+    correctOption: Stack
+  - questionText: What is the worst-case time complexity of quicksort?
+    options:
+    - O(n log n)
+    - "O(n\xB2)"
+    - O(log n)
+    - O(n)
+    correctOption: "O(n\xB2)"
+  typingQuestions:
+  - buggyCode: "#include <stdio.h>\r\n\r//Reverse Array\nint main() {\r\n    int
+      arr[] = {1, 2, 3, 4, 5};\r\n    int n = 5;\r\n\r\n    for (int i = 0; i <=
+      n / 2; i++) {\r\n        int temp = arr[i];\r\n        arr[i] = arr[n - i];\r\n       
+      arr[n - i] = temp;\r\n    }\r\n\r\n    for (int i = 0; i < n; i++)\r\n       
+      printf(\"%d \", arr[i]);\r\n    return 0;\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r//Reverse Array\nint main() {\r\n    int
+      arr[] = {1, 2, 3, 4, 5};\r\n    int n = 5;\r\n\r\n    for (int i = 0; i < n
+      / 2; i++) {\r\n        int temp = arr[i];\r\n        arr[i] = arr[n - 1 - i];\r\n       
+      arr[n - 1 - i] = temp;\r\n    }\r\n\r\n    for (int i = 0; i < n; i++)\r\n       
+      printf(\"%d \", arr[i]);\r\n    return 0;\r\n}\r\n"
+    expectedOutput: '5 4 3 2 1
+
+'
+  - buggyCode: "//Find Max element\n#include <stdio.h>\r\n\r\nint main() {\r\n   
+      int arr[] = {3, 8, 2, 9, 5};\r\n    int max = 0;\r\n\r\n    for (int i = 0;
+      i <= 5; i++) {\r\n        if (arr[i] > max)\r\n            max = arr[i];\r\n   
+      }\r\n\r\n    printf(\"Maximum: %d\", max);\r\n    return 0;\r\n}\r\n"
+    correctCode: "//Find Max element\n#include <stdio.h>\r\n\r\nint main() {\r\n   
+      int arr[] = {3, 8, 2, 9, 5};\r\n    int n = 5;\r\n    int max = arr[0];\r\n\r\n   
+      for (int i = 1; i < n; i++) {\r\n        if (arr[i] > max)\r\n            max
+      = arr[i];\r\n    }\r\n\r\n    printf(\"Maximum: %d\", max);\r\n    return 0;\r\n}\r\n"
+    expectedOutput: 'Maximum: 9
+
+'
+  - buggyCode: "#include <stdio.h>\r\n#include <stdlib.h>\r\n\r//insertion node\nstruct
+      Node {\r\n    int data;\r\n    struct Node* next;\r\n};\r\n\r\nvoid insertFront(struct
+      Node* head, int val) {\r\n    struct Node* newNode = malloc(sizeof(struct Node));\r\n   
+      newNode->data = val;\r\n    newNode->next = head;\r\n    head = newNode;\r\n}\r\n\r\nvoid
+      display(struct Node* head) {\r\n    while (head != NULL) {\r\n        printf(\"%d
+      \", head->data);\r\n        head = head->next;\r\n    }\r\n}"
+    correctCode: "#include <stdio.h>\r\n#include <stdlib.h>\r\n\r//insertion node\nstruct
+      Node {\r\n    int data;\r\n    struct Node* next;\r\n};\r\n\r\nvoid insertFront(struct
+      Node** head, int val) {\r\n    struct Node* newNode = malloc(sizeof(struct
+      Node));\r\n    newNode->data = val;\r\n    newNode->next = *head;\r\n    *head
+      = newNode;\r\n}\r\n\r\nvoid display(struct Node* head) {\r\n    while (head
+      != NULL) {\r\n        printf(\"%d \", head->data);\r\n        head = head->next;\r\n   
+      }\r\n}\r\n"
+    expectedOutput: '30 20 10
+
+'

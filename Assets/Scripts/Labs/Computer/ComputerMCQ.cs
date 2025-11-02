@@ -112,6 +112,123 @@
     
 // }
 
+// using UnityEngine;
+// using TMPro;
+// using UnityEngine.UI;
+// using System.Collections.Generic;
+
+// public class ComputerMCQ : MonoBehaviour
+// {
+//     [Header("UI References")]
+//     public TMP_Text questionText;
+//     public TMP_Text remainingText;
+//     public TMP_Text scoreText;
+//     public Button[] answerButtons;
+//     public GameObject resultPanel;
+//     public TMP_Text resultText;
+
+//     private List<QuestionData> questions;
+//     private int currentQuestionIndex = 0;
+//     private int score = 0;
+
+//     public void StartMCQ(QuestionSet set)
+//     {
+//         if (set == null || set.questions.Length == 0)
+//         {
+//             Debug.LogError("QuestionSet is null or empty!");
+//             return;
+//         }
+
+//         questions = new List<QuestionData>(set.questions); //gets the question set from the menu manger
+//         ShuffleQuestions(); 
+//         currentQuestionIndex = 0;
+//         score = 0;
+//         resultPanel.SetActive(false);
+
+//         ShowQuestion();
+//     }
+
+//     private void ShowQuestion()
+//     {
+//         if (currentQuestionIndex >= questions.Count)
+//         {
+//             EndMCQ();
+//             return;
+//         }
+
+//         QuestionData q = questions[currentQuestionIndex];
+//         questionText.text = q.questionText;
+//         remainingText.text = $"Remaining: {questions.Count - currentQuestionIndex}/{questions.Count}";
+//         scoreText.text = $"Score: {score}";
+
+//        //shuffle options based on the current question and the correct answer
+//         List<string> shuffledOptions = new List<string>(q.options);
+//         for (int i = 0; i < shuffledOptions.Count; i++)
+//         {
+//             int randomIndex = Random.Range(i, shuffledOptions.Count);
+//             string temp = shuffledOptions[i];
+//             shuffledOptions[i] = shuffledOptions[randomIndex];
+//             shuffledOptions[randomIndex] = temp;
+//         }
+
+//         for (int i = 0; i < answerButtons.Length; i++)
+//         {
+//             if (i < shuffledOptions.Count)
+//             {
+//                 answerButtons[i].gameObject.SetActive(true);
+//                 string optionText = shuffledOptions[i];
+//                 answerButtons[i].GetComponentInChildren<TMP_Text>().text = optionText;
+
+//                 answerButtons[i].onClick.RemoveAllListeners();
+//                 answerButtons[i].onClick.AddListener(() => OnAnswerSelected(optionText, q.correctOption));
+//             }
+//             else
+//             {
+//                 answerButtons[i].gameObject.SetActive(false);
+//             }
+//         }
+//     }
+
+//     private void OnAnswerSelected(string selectedAnswer, string correctAnswer)
+//     {
+//         if (selectedAnswer == correctAnswer)
+//             score++;
+
+//         currentQuestionIndex++;
+//         ShowQuestion();
+//     }
+
+//     private void EndMCQ()
+//     {
+//         resultPanel.SetActive(true);
+//         resultText.text = $"Stars Earned: {score}";
+
+//         if (resultPanel.activeSelf)
+//              Debug.Log("Result panel still active!");
+
+
+//         if (LabManager.Instance != null)
+//         {
+//             LabManager.Instance.CompleteLab(score); //Notify LabManager with score
+//         }
+//         else
+//         {
+//             Debug.LogError("LabManager instance not found!");
+//         }
+//     }
+
+//     private void ShuffleQuestions()
+//     {
+//         for (int i = 0; i < questions.Count; i++)
+//         {
+//             int randomIndex = Random.Range(i, questions.Count);
+//             var temp = questions[i];
+//             questions[i] = questions[randomIndex];
+//             questions[randomIndex] = temp;
+//         }
+//     }
+// }
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -139,8 +256,16 @@ public class ComputerMCQ : MonoBehaviour
             return;
         }
 
-        questions = new List<QuestionData>(set.questions); //gets the question set from the menu manger
-        ShuffleQuestions(); 
+        // Step 1: Copy all questions
+        questions = new List<QuestionData>(set.questions);
+
+        // Step 2: Shuffle all questions
+        ShuffleQuestions();
+
+        // Step 3: Take only 3 questions (or less if there are fewer than 3)
+        int questionCount = Mathf.Min(3, questions.Count);
+        questions = questions.GetRange(0, questionCount);
+
         currentQuestionIndex = 0;
         score = 0;
         resultPanel.SetActive(false);
@@ -161,7 +286,7 @@ public class ComputerMCQ : MonoBehaviour
         remainingText.text = $"Remaining: {questions.Count - currentQuestionIndex}/{questions.Count}";
         scoreText.text = $"Score: {score}";
 
-       //shuffle options based on the current question and the correct answer
+        // Shuffle options for the current question
         List<string> shuffledOptions = new List<string>(q.options);
         for (int i = 0; i < shuffledOptions.Count; i++)
         {
@@ -202,10 +327,6 @@ public class ComputerMCQ : MonoBehaviour
     {
         resultPanel.SetActive(true);
         resultText.text = $"Stars Earned: {score}";
-
-        if (resultPanel.activeSelf)
-             Debug.Log("Result panel still active!");
-
 
         if (LabManager.Instance != null)
         {
