@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c73bada57f4dbc45b34bc0ff309a0b8, type: 3}
+  m_Name: Java Questions
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Which of the following is not a Java keyword?
+    options:
+    - static
+    - Boolean
+    - void
+    - private
+    correctOption: Boolean
+  - questionText: Which method is the entry point of a Java program?
+    options:
+    - start()
+    - main()
+    - init()
+    - run()
+    correctOption: main()
+  - questionText: Which of these data types has the highest precision?
+    options:
+    - float
+    - double
+    - int
+    - long
+    correctOption: double
+  - questionText: What is the size of int in Java?
+    options:
+    - 8 bits
+    - 16 bits
+    - 32 bits
+    - 64 bits
+    correctOption: 32 bits
+  - questionText: Which of the following is used to allocate memory dynamically?
+    options:
+    - malloc()
+    - alloc()
+    - create()
+    - run()
+    correctOption: new
+  - questionText: Which keyword is used to inherit a class in Java?
+    options:
+    - super
+    - this
+    - extends
+    - implements
+    correctOption: extends
+  - questionText: Which method is the entry point of a Java program?
+    options:
+    - public
+    - protected
+    - private
+    - void
+    correctOption: main()
+  - questionText: What is the default value of a local variable?
+    options:
+    - 0
+    - null
+    - depends on type
+    - no default value
+    correctOption: no default value
+  - questionText: Which of the following cannot be declared static?
+    options:
+    - variable
+    - method
+    - class (nested)
+    - constructor
+    correctOption: constructor
+  - questionText: Which collection class allows you to grow or shrink its size and
+      provides indexed access to elements?
+    options:
+    - Array
+    - ArrayList
+    - LinkedList
+    - HashMap
+    correctOption: ArrayList
+  - questionText: What is the default value of a boolean variable in a class?
+    options:
+    - true
+    - false
+    - 0
+    - null
+    correctOption: false
+  typingQuestions:
+  - buggyCode: 
+    correctCode: 
+    expectedOutput: 

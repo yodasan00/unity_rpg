@@ -26,7 +26,7 @@ public class HUDManager : MonoBehaviour
     {
         UpdateStars(0);
         UpdateSemester("Semester 1");
-        UpdateTime("Day 1 - 08:00 AM");
+        UpdateTime("Day 1");
     }
 
     public void UpdateStars(int stars)
@@ -36,7 +36,7 @@ public class HUDManager : MonoBehaviour
 
     public void UpdateSemester(string sem)
     {
-        semesterText.text = $"Semester: {sem} ";
+        semesterText.text = $"Semester: {sem} sem ";
     }
 
     public void UpdateTime(string time)
@@ -44,3 +44,4 @@ public class HUDManager : MonoBehaviour
         timeText.text = $"Time: {time} ";
     }
 }
+

@@ -74,11 +74,13 @@ public class PlayerProgress
     public void AddStars(int stars)
     {
         totalStars += stars;
+        HUDManager.Instance.UpdateStars(totalStars);
     }
 
     public void UnlockNextSemester()
     {
         currentSemester++;
+        HUDManager.Instance.UpdateSemester(currentSemester.ToString());
     }
 
     public bool IsSemesterUnlocked(int semester)

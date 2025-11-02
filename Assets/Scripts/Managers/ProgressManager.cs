@@ -52,7 +52,7 @@ public class ProgressManager : MonoBehaviour
     public void AddStars(int stars)
     {
         playerProgress.AddStars(stars);
-         HUDManager.Instance.UpdateStars(stars);
+        // HUDManager.Instance.UpdateStars(stars);
         SaveProgress();
         SemesterManager.Instance.TryUnlockNextSemester();
     }
@@ -110,9 +110,12 @@ public void CompleteLab(LabData lab, int earnedStars)
     playerProgress.NextDay();
     SaveProgress();
     Debug.Log("Moved to next day: " + playerProgress.currentDay);
+    HUDManager.Instance.UpdateTime("Day " + playerProgress.currentDay);
     //HUDManager.Instance.Update(playerProgress.currentDay); // optional, if you have HUD
 }
 
 }
 
-//manages player progress including saving/loading and tracking completed labs and stars
+
+
+// //manages player progress including saving/loading and tracking completed labs and stars
