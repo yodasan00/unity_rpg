@@ -271,11 +271,11 @@ MonoBehaviour:
   - I'M Your Data Structures Teacher.
   - Go To The Last Bench And Have A Seat!!
   portraitImages:
-  - {fileID: 3223026509457666076, guid: 4e6543537eb931e47b6d59679711b620, type: 3}
-  - {fileID: 3223026509457666076, guid: 4e6543537eb931e47b6d59679711b620, type: 3}
-  - {fileID: 3223026509457666076, guid: 4e6543537eb931e47b6d59679711b620, type: 3}
-  - {fileID: 3223026509457666076, guid: 4e6543537eb931e47b6d59679711b620, type: 3}
-  - {fileID: 3223026509457666076, guid: 4e6543537eb931e47b6d59679711b620, type: 3}
+  - {fileID: -187368011347979546, guid: 3d3e1f34cb7b4ce4e99724d11c122d40, type: 3}
+  - {fileID: -187368011347979546, guid: 3d3e1f34cb7b4ce4e99724d11c122d40, type: 3}
+  - {fileID: -187368011347979546, guid: 3d3e1f34cb7b4ce4e99724d11c122d40, type: 3}
+  - {fileID: -187368011347979546, guid: 3d3e1f34cb7b4ce4e99724d11c122d40, type: 3}
+  - {fileID: -187368011347979546, guid: 3d3e1f34cb7b4ce4e99724d11c122d40, type: 3}
   lettersPerSecond: 20
 --- !u!1 &138198769
 GameObject:
