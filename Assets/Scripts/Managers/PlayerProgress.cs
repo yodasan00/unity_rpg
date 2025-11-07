@@ -67,6 +67,11 @@ public class PlayerProgress
     public int totalStars = 0;
     public int currentDay = 1; // 🔹 NEW
 
+    public string currentScene ; // 🔹 NEW — saves the scene
+    public float playerPosX = 0f;               // 🔹 NEW — saves X position
+    public float playerPosY = 0f;               // 🔹 NEW — saves Y position
+    public float playerPosZ = 0f; 
+
     public List<string> completedLabs = new List<string>();
     public List<string> completedQuests = new List<string>();
     public List<string> dailyCompletedLabs = new List<string>(); // 🔹 NEW - Labs done today
@@ -126,7 +131,7 @@ public class PlayerProgress
         return dailyCompletedLabs.Contains(key);
     }
 
-    public void ResetProgress()
+   public void ResetProgress()
     {
         currentSemester = 1;
         totalStars = 0;
@@ -134,5 +139,9 @@ public class PlayerProgress
         completedLabs.Clear();
         completedQuests.Clear();
         dailyCompletedLabs.Clear();
+        currentScene = "CampusScene";
+        playerPosX = 0f;
+        playerPosY = 0f;
+        playerPosZ = 0f;
     }
 }

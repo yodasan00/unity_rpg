@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9b4c6c8982bbe498541b897fe50c6c, type: 3}
+  m_Name: GlobalMusicLib
+  m_EditorClassIdentifier: 
+  mainMenuMusic: {fileID: 8300000, guid: 3e7f6de13e395b54bb130976e5f81191, type: 3}
+  campusMusic: {fileID: 8300000, guid: 42e85aa3fce84754ba1c41c9885ce245, type: 3}
+  programmingLabMusic: {fileID: 0}
+  questCompleteSFX: {fileID: 0}
+  achievementSFX: {fileID: 0}
+  buttonClickSFX: {fileID: 0}
+  pauseMenuMusic: {fileID: 0}

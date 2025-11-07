@@ -22,12 +22,25 @@ public class ProgressManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         savePath = Path.Combine(Application.persistentDataPath, "playerProgress.json");
-        ResetProgress();
+        //ResetProgress();
         LoadProgress();
     }
 
     public void SaveProgress()
     {
+
+           // Save scene name
+    playerProgress.currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+
+    // Save player position if available
+    GameObject player = GameObject.FindWithTag("Player");
+    if (player != null)
+    {
+        Vector3 pos = player.transform.position;
+        playerProgress.playerPosX = pos.x;
+        playerProgress.playerPosY = pos.y;
+        playerProgress.playerPosZ = pos.z;
+    }
         string json = JsonUtility.ToJson(playerProgress, true);
         File.WriteAllText(savePath, json);
         Debug.Log("Progress saved: " + savePath);
@@ -48,6 +61,12 @@ public class ProgressManager : MonoBehaviour
             Debug.Log("No save found, new progress created.");
         }
     }
+
+    public bool HasSaveFile()
+    {
+    return File.Exists(savePath);
+    }
+
 
     public void AddStars(int stars)
     {
