@@ -1091,7 +1091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: AF4
-  spawnPointName: A
+  spawnPointName: a4
 --- !u!61 &1102515756
 BoxCollider2D:
   m_ObjectHideFlags: 0

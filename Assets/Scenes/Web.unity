@@ -234,7 +234,6 @@ GameObject:
   - component: {fileID: 372071949}
   - component: {fileID: 372071952}
   - component: {fileID: 372071951}
-  - component: {fileID: 372071954}
   - component: {fileID: 372071956}
   - component: {fileID: 372071957}
   - component: {fileID: 372071958}
@@ -299,27 +298,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372071948}
   m_CullTransparentMesh: 1
---- !u!114 &372071954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372071948}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89b753765ec7ef94abc94df4bc787228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  zoomSpeed: 0.08
-  minZoom: 0.5
-  maxZoom: 2
-  mainPanel: {fileID: 0}
-  departmentPanel: {fileID: 0}
-  yearPanel: {fileID: 0}
-  subjectPanel: {fileID: 0}
-  pdfViewerPanel: {fileID: 346432716}
 --- !u!114 &372071956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   browserClient:
     engine: {fileID: 11400000, guid: 649ce3cfdf00ca615abcf2bb62227f5c, type: 2}
-    initialUrl: 
+    initialUrl: http://www.youtube.com
     resolution:
       Width: 1920
       Height: 1080
@@ -350,7 +328,7 @@ MonoBehaviour:
       Username: 
       Password: 
       ProxyServer: 0
-    webRtc: 0
+    webRtc: 1
     remoteDebugging: 0
     remoteDebuggingPort: 9022
     remoteDebuggingAllowedOrigins:
@@ -361,7 +339,7 @@ MonoBehaviour:
     noSandbox: 0
     ignoreSslErrorsDomains: []
     communicationLayer: {fileID: 11400000, guid: 05fef73d64ae908d1b4ec02a676d1ccc, type: 2}
-    engineStartupTimeout: 4000
+    engineStartupTimeout: 6000
     logSeverity: 1
     ignoreLogProcessJsonErrors: 1
   inputHandler: {fileID: 11400000, guid: 565be9a8022a65c7288f47df26d5fe7f, type: 2}
@@ -765,7 +743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.90200007, y: 0.86600006}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.0346375, y: -0.119522095}
+  m_AnchoredPosition: {x: 3.034546, y: -0.119506836}
   m_SizeDelta: {x: 6.2251587, y: 1.3057251}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1358959824

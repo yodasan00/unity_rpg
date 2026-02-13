@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameSceneLoader : MonoBehaviour
 {
     public GameObject hudPrefab;
 

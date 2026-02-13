@@ -24,6 +24,7 @@ public class PYQTrigger : MonoBehaviour
         {
             Debug.Log("Space key was pressed.");
             Book.SetActive(true);
+            MusicManager.Instance.PlayUISound("book");
             Player.enabled = false;
         }
 

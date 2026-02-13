@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c73bada57f4dbc45b34bc0ff309a0b8, type: 3}
+  m_Name: CQues
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Which of the following is the correct syntax to declare a variable
+      in C
+    options:
+    - int = x;
+    - int x;
+    - x int;
+    - declare int x;
+    correctOption: int x;
+  - questionText: Which header file is required for using printf()?
+    options:
+    - <stdlib.h>
+    - <stdio.h>
+    - <string.h>
+    - <conio.h>
+    correctOption: <stdio.h>
+  - questionText: What is the size of int in most 32-bit systems?
+    options:
+    - 1 byte
+    - 2 bytes
+    - 4 bytes
+    - 8 bytes
+    correctOption: 4 bytes
+  - questionText: 'The default return type of a function in C (if not specified)
+      is:'
+    options:
+    - float
+    - void
+    - int
+    - double
+    correctOption: int
+  - questionText: Which operator is used for address-of?
+    options:
+    - '*'
+    - '&'
+    - '@'
+    - '%'
+    correctOption: '&'
+  - questionText: Which data type stores a single character?
+    options:
+    - int
+    - char
+    - float
+    - string
+    correctOption: char
+  - questionText: Which is the correct comment syntax in C?
+    options:
+    - -- comment
+    - // comment
+    - '# comment'
+    - '** comment'
+    correctOption: // comment
+  - questionText: Which of the following is NOT a loop in C?
+    options:
+    - for
+    - repeat
+    - while
+    - do-while
+    correctOption: repeat
+  - questionText: 'The escape sequence for a new line is:'
+    options:
+    - \n
+    - /n
+    - n\
+    - '&n'
+    correctOption: \n
+  - questionText: 'The correct way to declare an array of 10 integers:'
+    options:
+    - int arr;
+    - int arr[10];
+    - int arr(10);
+    - array int arr;
+    correctOption: int arr[10];
+  - questionText: Which of the following correctly passes a pointer to a function?
+    options:
+    - fun(&x);
+    - fun(*x);
+    - fun(#x);
+    - fun(%x);
+    correctOption: fun(&x);
+  - questionText: What is the output? int a = 5; printf("%d", a++);
+    options:
+    - 6
+    - 5
+    - Error
+    - Undefined
+    correctOption: 5
+  typingQuestions:
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    printf(\"Hello World\")\r\n   
+      return 0\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    printf(\"Hello World\");\r\n   
+      return 0;\r\n}\r\n"
+    expectedOutput: 'Hello World
+
+'
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int a = 5, b = 7;\r\n   
+      sum = a + b;\r\n    printf(\"Sum is %d\", sum)\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int a = 5, b = 7;\r\n   
+      int sum = a + b;\r\n    printf(\"Sum is %d\", sum);\r\n    return 0;\r\n}\r\n"
+    expectedOutput: 'Sum is 12
+
+'
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int n = 4;\r\n    if(n
+      % 2 = 0)\r\n        printf(\"Even\");\r\n    else\r\n        printf(\"Odd\")\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int n = 4;\r\n   
+      if(n % 2 == 0)\r\n        printf(\"Even\");\r\n    else\r\n        printf(\"Odd\");\r\n   
+      return 0;\r\n}\r\n"
+    expectedOutput: 'Even
+
+'
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    for(int i = 1; i <=
+      5; i++)\r\n        printf(\"%d\\n\", i)\r\n    return 0\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    for(int i = 1; i
+      <= 5; i++)\r\n        printf(\"%d\\n\", i);\r\n    return 0;\r\n}\r\n"
+    expectedOutput: '1
+
+      2
+
+      3
+
+      4
+
+      5
+
+'
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int n = 5, fact = 1;\r\n   
+      for(int i = 1; i <= n; i++);\r\n        fact = fact * i;\r\n    printf(\"%d\",
+      fact);\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int n = 5, fact =
+      1;\r\n    for(int i = 1; i <= n; i++)\r\n        fact = fact * i;\r\n    printf(\"%d\",
+      fact);\r\n    return 0;\r\n}\r\n"
+    expectedOutput: '120
+
+'
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int arr = {1,2,3,4,5};\r\n   
+      int sum = 0;\r\n\r\n    for(int i = 0; i < 5; i++) {\r\n        sum = sum +
+      arr[i]\r\n    }\r\n\r\n    printf(\"Sum = %d\" sum);\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int arr[] = {1,2,3,4,5};\r\n   
+      int sum = 0;\r\n\r\n    for(int i = 0; i < 5; i++) {\r\n        sum = sum +
+      arr[i];\r\n    }\r\n\r\n    printf(\"Sum = %d\", sum);\r\n    return 0;\r\n}\r\n"
+    expectedOutput: 'Sum = 15
+
+'
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int a = 10, b = 20;\r\n   
+      if(a > b)\r\n        printf(\"A is largest\")\r\n    else\r\n        printf(\"B
+      is largest\");\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int a = 10, b = 20;\r\n   
+      if(a > b)\r\n        printf(\"A is largest\");\r\n    else\r\n        printf(\"B
+      is largest\");\r\n    return 0;\r\n}\r\n"
+    expectedOutput: 'B is largest
+
+'
+  - buggyCode: "#include <stdio.h>\r\n#include <string.h>\r\n\r\nint main() {\r\n   
+      char str = \"Hello\";\r\n    printf(\"Length = %d\", strlen(str));\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n#include <string.h>\r\n\r\nint main() {\r\n   
+      char str[] = \"Hello\";\r\n    printf(\"Length = %ld\", strlen(str));\r\n   
+      return 0;\r\n}\r\n"
+    expectedOutput: 'Length = 5
+
+'
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int a = 5, b = 10,
+      temp;\r\n    temp = a;\r\n    a = b\r\n    b = temp\r\n\r\n    printf(\"%d
+      %d\", a b);\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int a = 5, b = 10,
+      temp;\r\n    temp = a;\r\n    a = b;\r\n    b = temp;\r\n\r\n    printf(\"%d
+      %d\", a, b);\r\n    return 0;\r\n}\r\n"
+    expectedOutput: '10 5
+
+'
+  - buggyCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int n = 123, rev =
+      0;\r\n    while(n > 0)\r\n        rev = rev * 10 + (n % 10);\r\n        n =
+      n / 10;\r\n    printf(\"%d\", rev);\r\n}\r\n"
+    correctCode: "#include <stdio.h>\r\n\r\nint main() {\r\n    int n = 123, rev
+      = 0;\r\n    while(n > 0) {\r\n        rev = rev * 10 + (n % 10);\r\n       
+      n = n / 10;\r\n    }\r\n    printf(\"%d\", rev);\r\n    return 0;\r\n}\r\n"
+    expectedOutput: '321
+
+'

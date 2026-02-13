@@ -95,6 +95,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System.Linq;
 
 public class TypingDebug : MonoBehaviour
 {
@@ -156,7 +157,8 @@ public class TypingDebug : MonoBehaviour
             nextButton.interactable = false;
             ScorePanel.SetActive(true);
             FinalscoreText.text = $"Score: {score}";
-
+            MusicManager.Instance.PlayUISound("score");
+            QuestManager.Instance.CompleteQuest(QuestType.AttendLab);
             // Add stars and save progress
             if (LabManager.Instance != null)
                 LabManager.Instance.CompleteLab(score);
@@ -169,18 +171,22 @@ public class TypingDebug : MonoBehaviour
     {
         string playerCode = codeInputField.text.Trim();
         string correctCode = questions[currentIndex].correctCode.Trim();
+        print(playerCode);
+        print(correctCode);
 
         CmdScreen.SetActive(true);
 
-        if (playerCode == correctCode)
+        if (Normalize(playerCode) == Normalize(correctCode))
         {
             consoleOutput.text = $"CMD>C:TurboC++/bin/output: {questions[currentIndex].expectedOutput}";
+            MusicManager.Instance.PlayUISound("success");
             score++;
             UpdateScore();
         }
         else
         {
             consoleOutput.text = "CMD>C:TurboC++/bin/output: Syntax Error";
+            MusicManager.Instance.PlayUISound("error");
         }
     }
 
@@ -206,4 +212,12 @@ public class TypingDebug : MonoBehaviour
             questions[randomIndex] = temp;
         }
     }
+
+    string Normalize(string code)
+{
+    return string.Concat(
+        code.Where(c => !char.IsWhiteSpace(c))
+    ).ToLower();
+}
+
 }

@@ -327,6 +327,8 @@ public class ComputerMCQ : MonoBehaviour
     {
         resultPanel.SetActive(true);
         resultText.text = $"Stars Earned: {score}";
+        MusicManager.Instance.PlayUISound("score");
+        QuestManager.Instance.CompleteQuest(QuestType.AttendLab);
 
         if (LabManager.Instance != null)
         {

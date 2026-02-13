@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a360a23aa224394aa1c5da618d4256b, type: 3}
+  m_Name: Computer
+  m_EditorClassIdentifier: 
+  departmentName: Computer
+  subjects:
+  - subjectName: Data Structure
+    url: https://youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi&si=zFp9SbGvzv6jIEa_
+  - subjectName: Java
+    url: https://youtube.com/playlist?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q&si=dDXN7XwHbAXhRWGF
+  - subjectName: C Programming
+    url: https://youtube.com/playlist?list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S&si=Per_1jqO0w-xbIqz
+  - subjectName: DAA
+    url: https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&si=eEN8FEbD523fedGm
+  - subjectName: FLAT
+    url: https://youtube.com/playlist?list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&si=x9eKaQpvdP_2W7YZ
+  - subjectName: CN
+    url: https://youtube.com/playlist?list=PLBlnK6fEyqRjT3oJxFXRgjPNzeS-LFY-q&si=PljPG626lljevaRv
+  - subjectName: COA
+    url: https://youtube.com/playlist?list=PLBlnK6fEyqRgLLlzdgiTUKULKJPYc0A4q&si=JHGAB_qsCktsWakU
+  - subjectName: DBMS
+    url: https://youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y&si=N2meemPiWUaYahLq

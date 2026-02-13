@@ -161,7 +161,22 @@ ScriptedImporter:
     spriteBone: []
     spriteOutline: []
     vertices: []
-    spritePhysicsOutline: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -53, y: -33}
+      - {x: -24, y: -35}
+      - {x: 64, y: -35}
+      - {x: 64, y: 35}
+      - {x: -59, y: 35}
+      - {x: -64, y: 28}
+      - {x: -64, y: -30}
+      - {x: -63, y: -35}
+      - {x: -56, y: -35}
+    - outline:
+      - {x: -50, y: -24}
+      - {x: -50, y: -6}
+      - {x: 50, y: -6}
+      - {x: 50, y: -24}
     indices: 
     edges: []
     tessellationDetail: 0

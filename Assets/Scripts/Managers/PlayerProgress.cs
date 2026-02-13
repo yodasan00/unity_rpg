@@ -68,9 +68,6 @@ public class PlayerProgress
     public int currentDay = 1; // 🔹 NEW
 
     public string currentScene ; // 🔹 NEW — saves the scene
-    public float playerPosX = 0f;               // 🔹 NEW — saves X position
-    public float playerPosY = 0f;               // 🔹 NEW — saves Y position
-    public float playerPosZ = 0f; 
 
     public List<string> completedLabs = new List<string>();
     public List<string> completedQuests = new List<string>();
@@ -132,16 +129,16 @@ public class PlayerProgress
     }
 
    public void ResetProgress()
-    {
-        currentSemester = 1;
-        totalStars = 0;
-        currentDay = 1;
-        completedLabs.Clear();
-        completedQuests.Clear();
-        dailyCompletedLabs.Clear();
-        currentScene = "CampusScene";
-        playerPosX = 0f;
-        playerPosY = 0f;
-        playerPosZ = 0f;
-    }
+{
+    currentSemester = 1;
+    totalStars = 0;
+    currentDay = 1;
+
+    completedLabs.Clear();
+    completedQuests.Clear();
+    dailyCompletedLabs.Clear();
+    QuestManager.Instance.ResetDailyQuests();
+    currentScene = "Rooms";
+}
+
 }

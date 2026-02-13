@@ -12,10 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9b4c6c8982bbe498541b897fe50c6c, type: 3}
   m_Name: GlobalMusicLib
   m_EditorClassIdentifier: 
-  mainMenuMusic: {fileID: 8300000, guid: 3e7f6de13e395b54bb130976e5f81191, type: 3}
-  campusMusic: {fileID: 8300000, guid: 42e85aa3fce84754ba1c41c9885ce245, type: 3}
+  mainMenuMusic: {fileID: 8300000, guid: 112c605540f32114f8999230ed61a1db, type: 3}
+  campusMusic: {fileID: 8300000, guid: e0fbaf1802fd0a2469ef0a9d8053ec6c, type: 3}
+  BuildingMusic: {fileID: 8300000, guid: 42e85aa3fce84754ba1c41c9885ce245, type: 3}
   programmingLabMusic: {fileID: 0}
-  questCompleteSFX: {fileID: 0}
-  achievementSFX: {fileID: 0}
-  buttonClickSFX: {fileID: 0}
+  uiClick: {fileID: 8300000, guid: d17e80c0d08be9d4db750a00391140c4, type: 3}
+  uiHover: {fileID: 0}
+  uiSuccess: {fileID: 8300000, guid: 517ae1c1f66a56d4bb446c8943463340, type: 3}
+  uiError: {fileID: 8300000, guid: eed9aabb1d7e9694d9ca9a489e84a220, type: 3}
+  scoreSound: {fileID: 8300000, guid: 11de4b5a7402a1749905ed802a0c5d2a, type: 3}
+  MaleNPC:
+  - {fileID: 8300000, guid: 4dd51550991ef834f8fab4de676cc13c, type: 3}
+  - {fileID: 8300000, guid: 9b52de781234c2848a1e2c7b9ff52986, type: 3}
+  - {fileID: 8300000, guid: 44fbbca565c896d498f72b0e80bb1ca8, type: 3}
+  - {fileID: 8300000, guid: 2467c0dc4e761ef42a6fc7108d9c09b5, type: 3}
+  FemaleNPC:
+  - {fileID: 8300000, guid: c18d78bc401f43a4b83a5f1b45ba3a61, type: 3}
+  - {fileID: 8300000, guid: 823b6659208124a45bed49f616aed654, type: 3}
+  - {fileID: 8300000, guid: 14e33fc1374b6a5479c9af8b062b470d, type: 3}
+  LibaryBook: {fileID: 8300000, guid: 51ce87b0000ac16499903c4f3c156260, type: 3}
+  nextDaySound: {fileID: 8300000, guid: 96500ae19a1e4d8469cfb0057985f2c8, type: 3}
+  ball: {fileID: 8300000, guid: 6fa852f0633f20841b553c52a9d66b40, type: 3}
+  failure: {fileID: 8300000, guid: bfaee87f47b37e642a0050a3fa4e2937, type: 3}
   pauseMenuMusic: {fileID: 0}
+  ComputerMusic: {fileID: 0}

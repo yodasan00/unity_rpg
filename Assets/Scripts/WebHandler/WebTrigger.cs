@@ -48,7 +48,7 @@
 
 using UnityEngine;
 
-public class WebTrigger : SceneSwitcher
+public class WebTrigger : MonoBehaviour
 {
     private bool istrigger = false;
     public PlayerController Player;
@@ -61,21 +61,22 @@ public class WebTrigger : SceneSwitcher
 
             PlayerPrefs.SetString("LastScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
             PlayerPrefs.Save();
-
-            LoadBrowserSceneWithNewURL();
+            GetComponent<UIPanelManager>().Setup();
             Player.enabled = false;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")){
             istrigger = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")){
             istrigger = false;
+    }
     }
 }

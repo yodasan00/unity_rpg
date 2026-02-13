@@ -6,6 +6,7 @@ public class MusicLibrary : ScriptableObject
     [Header("Background Music")]
     public AudioClip mainMenuMusic;
     public AudioClip campusMusic;
+    public AudioClip BuildingMusic;
 
     [Header("Lab Music")]
     public AudioClip programmingLabMusic;
@@ -14,10 +15,21 @@ public class MusicLibrary : ScriptableObject
     // public AudioClip drawingLabMusic;
 
     [Header(" SFX / Event Sounds")]
-    public AudioClip questCompleteSFX;
-    public AudioClip achievementSFX;
-    public AudioClip buttonClickSFX;
+    [Header("UI Sounds")]
+    public AudioClip uiClick;
+    public AudioClip uiHover;
+    public AudioClip uiSuccess;
+    public AudioClip uiError;
+    public AudioClip scoreSound;
+    public AudioClip[] MaleNPC;
+    public AudioClip[] FemaleNPC;
+    public AudioClip LibaryBook;
+    public AudioClip nextDaySound;
+    public AudioClip ball;
+    public AudioClip failure;
+
 
     [Header("UI / Misc")]
     public AudioClip pauseMenuMusic;
+    public AudioClip ComputerMusic;
 }

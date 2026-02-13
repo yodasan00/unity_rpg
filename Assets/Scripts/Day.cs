@@ -10,8 +10,8 @@ public class Day : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && istrigger)
-        {
-            StartCoroutine(NextDaySequence());
+        {  
+            TrySleep();
         }
     }
 
@@ -42,5 +42,20 @@ public class Day : MonoBehaviour
     {
         if (other.CompareTag("Player"))
             istrigger = false;
+    }
+
+    public void TrySleep()
+    {
+        if (QuestManager.Instance.AreAllQuestsCompleted())
+        {
+            Debug.Log("You slept! New Day.");
+            QuestManager.Instance.ResetDailyQuests();
+            MusicManager.Instance.PlayUISound("nextday");
+            StartCoroutine(NextDaySequence());
+        }
+        else
+        {
+            Debug.Log("You can't sleep yet! Finish today's quests.");
+        }
     }
 }

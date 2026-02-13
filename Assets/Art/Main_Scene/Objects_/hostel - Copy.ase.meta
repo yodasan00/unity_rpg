@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -85,7 +85,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638975220227998653
+  platformSettingsDirtyTick: 638994511426581855
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -144,7 +144,58 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData: []
+  spriteSheetImportData:
+  - name: hostel - Copy_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 126
+      height: 89
+    spriteID: cb85aabe4485cb04ea93fe09b6a97bb2
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: 63, y: -42.5}
+      - {x: 63, y: 34.5}
+      - {x: 26, y: 34.5}
+      - {x: 16, y: 44.5}
+      - {x: -10, y: 44.5}
+      - {x: -26, y: 29.5}
+      - {x: -26, y: 27.5}
+      - {x: -25, y: 24.5}
+      - {x: -20, y: 24.5}
+      - {x: -50, y: 23.5}
+      - {x: -63, y: 9.5}
+      - {x: -63, y: -42.5}
+      - {x: -42, y: -44.5}
+      - {x: 40, y: -44.5}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: 63, y: -42.5}
+      - {x: 63, y: 34.5}
+      - {x: 25, y: 34.5}
+      - {x: 15, y: 44.5}
+      - {x: -12, y: 44.5}
+      - {x: -26, y: 29.5}
+      - {x: -26, y: 27.5}
+      - {x: -25, y: 24.5}
+      - {x: -20, y: 24.5}
+      - {x: -50, y: 23.5}
+      - {x: -63, y: 9.5}
+      - {x: -63, y: -42.5}
+      - {x: -42, y: -44.5}
+      - {x: 40, y: -44.5}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
     uuid:

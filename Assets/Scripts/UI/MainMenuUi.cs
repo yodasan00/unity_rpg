@@ -47,9 +47,11 @@
 // }
 
 
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
 
 public class MainMenuUI : MonoBehaviour
 {
@@ -60,8 +62,13 @@ public class MainMenuUI : MonoBehaviour
     public bool useFadeTransition = true;
 
     [Header("UI References")]
-    [SerializeField] private Button loadButton; // 👈 Drag your Load Game button here in Inspector
+    [SerializeField] private GameObject Settings;
+    [SerializeField] private GameObject Credits;
+    [SerializeField] private Button loadButton; 
 
+    public static MainMenuUI Instance { get; private set; }
+    private bool settin = false; 
+    private bool credit = false;
     private void Start()
     {
         // Disable the Load button if no save file exists
@@ -74,29 +81,52 @@ public class MainMenuUI : MonoBehaviour
         {
             loadButton.interactable = true;
             Debug.Log("Save file found - Load button enabled.");
+            Debug.Log(Application.persistentDataPath);
+
         }
     }
 
-    public void StartGame()
-    {
-        Debug.Log("Starting new game...");
-        ProgressManager.Instance.ResetProgress(); // start fresh
-        LoadScene();
-    }
+public void StartGame()
+{
+    Debug.Log("Starting NEW GAME...");
+    if (HUDManager.Instance != null)
+        Destroy(HUDManager.Instance.gameObject);
 
-    public void LoadGame()
-    {
-        Debug.Log("Loading existing save...");
-        ProgressManager.Instance.LoadProgress();
-        LoadScene();
-    }
+    ProgressManager.Instance.CreateNewGame();
+    QuestManager.Instance.ResetDailyQuests();
+
+    LoadScene();
+}
+
+
+   public void LoadGame()
+{
+    Debug.Log("Loading EXISTING GAME...");
+
+    ProgressManager.Instance.LoadExistingGame();
+
+    LoadScene();
+}
+
 
     private void LoadScene()
     {
-        if (useFadeTransition && FadeManager.Instance != null)
-            FadeManager.Instance.FadeToScene(campusSceneName);
-        else
-            SceneManager.LoadScene(campusSceneName);
+        // if (useFadeTransition && FadeManager.Instance != null)
+        //     FadeManager.Instance.FadeToScene(campusSceneName);
+        // else
+        //     SceneManager.LoadScene(campusSceneName);
+        FindAnyObjectByType<LoadingScreen>().LoadScene(campusSceneName);
+    }
+     public void ToggleSettings()
+    {
+        settin = !settin;
+        Settings.SetActive(settin);
+    }
+
+    public void ToggleCredits()
+    {
+        credit = !credit;
+        Credits.SetActive(credit);
     }
 
     public void ExitGame()

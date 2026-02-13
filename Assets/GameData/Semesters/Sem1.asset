@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   semesterName: Semester1
   labs:
-  - {fileID: 11400000, guid: 1f1b4d444bedba44ca803eadc66d4318, type: 2}
+  - {fileID: 11400000, guid: ce21be72b1a7cce4c9522026071c1332, type: 2}
   requiredStarsToUnlock: 0

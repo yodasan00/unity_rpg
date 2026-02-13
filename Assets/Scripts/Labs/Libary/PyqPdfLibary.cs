@@ -41,6 +41,7 @@ public class PyqPdfLibary : MonoBehaviour
         selectedDepartment = department;
         yearPanel.SetActive(true);
         departmentPanel.SetActive(false);
+        MusicManager.Instance.PlayUISound("book");
     }
 
     
@@ -49,15 +50,15 @@ public class PyqPdfLibary : MonoBehaviour
         selectedYear = year;
         yearPanel.SetActive(false);
         subjectPanel.SetActive(true);
+        MusicManager.Instance.PlayUISound("book");
         ShowSubjects();
+         
     }
 
   
     void ShowSubjects()
     {
 
-
-       
         foreach (Transform child in subjectContentParent)
             Destroy(child.gameObject);
 
@@ -143,6 +144,7 @@ public class PyqPdfLibary : MonoBehaviour
         {
             currentPageIndex++;
             pdfDisplay.texture = pages[currentPageIndex];
+            MusicManager.Instance.PlayUISound("book");
             UpdateNavButtons();
         }
     }
@@ -153,6 +155,7 @@ public class PyqPdfLibary : MonoBehaviour
         {
             currentPageIndex--;
             pdfDisplay.texture = pages[currentPageIndex];
+            MusicManager.Instance.PlayUISound("book");
             UpdateNavButtons();
         }
     }

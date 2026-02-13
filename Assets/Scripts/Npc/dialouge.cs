@@ -43,6 +43,11 @@ public class DialogueSystem : MonoBehaviour
     {
         if (playerIsInTrigger && Input.GetKeyDown(KeyCode.Space) && !isDialogueActive)
         {
+            if (gameObject.tag == "female")
+                    MusicManager.Instance.PlayUISound("female");
+            else if (gameObject.tag == "male")
+                    MusicManager.Instance.PlayUISound("male");
+                    
             StartDialogue();
         }
         else if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
@@ -58,6 +63,10 @@ public class DialogueSystem : MonoBehaviour
                 currentLineIndex++;
                 if (currentLineIndex < minLength)
                 {
+                    if (gameObject.tag == "female")
+                        MusicManager.Instance.PlayUISound("female");
+                    else if (gameObject.tag == "male")
+                        MusicManager.Instance.PlayUISound("male");
                     StartLine();
                 }
                 else
@@ -143,8 +152,11 @@ public class DialogueSystem : MonoBehaviour
         if (dialogueCanvas != null)
         {
             dialogueCanvas.SetActive(false);
+            QuestManager.Instance.CompleteQuest(QuestType.TalkToNPC);
         }
         currentLineIndex = 0;
+        
+
     }
 }
 
